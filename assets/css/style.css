@@ -6119,7 +6119,7 @@ select:visited {
   white-space: nowrap;
   padding: 15px 64px 15px 30px;
   font-family: var(--heading);
-  background: var(--linear, linear-gradient(135deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%));
+  background: var(--linear, linear-gradient(135deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%));
 }
 .bi-btn-4 a:before {
   top: 0;
@@ -6393,8 +6393,8 @@ select:visited {
   display: flex;
   font-size: 310px;
   font-weight: 900;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF3838), to(rgba(255, 56, 56, 0)));
-  background: linear-gradient(180deg, #FF3838 0%, rgba(255, 56, 56, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffc400), to(rgba(255, 56, 56, 0)));
+  background: linear-gradient(180deg, #ffc400 0%, rgba(255, 56, 56, 0) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: inherit;
@@ -6646,7 +6646,7 @@ select:visited {
   display: flow-root;
   overflow: hidden;
   padding-top: 25px;
-  background: linear-gradient(135deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: linear-gradient(135deg, #EB5C18 0%, #ffc400 45.72%, #CA2DB8 100%);
 }
 .bi-text-scroll-item-2 h3 {
   font-size: 92px;
@@ -6728,7 +6728,7 @@ select:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: var(--linear, linear-gradient(135deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%));
+  background: var(--linear, linear-gradient(135deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%));
 }
 .bi-service-scroll-item .service-text .service_more:hover {
   -webkit-transform: rotate(-45deg);
@@ -6743,8 +6743,8 @@ select:visited {
   border-radius: 0px 0px 100px 100px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.02)));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.02) 100%);
-  -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 56, 56, 0.5);
-          box-shadow: 0px 1px 0px 0px rgba(255, 56, 56, 0.5);
+  -webkit-box-shadow: 0px 1px 0px 0px #ffc400;
+          box-shadow: 0px 1px 0px 0px #ffc400;
 }
 
 .bi-service-title-text {
@@ -7063,7 +7063,7 @@ select:visited {
   position: absolute;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  background: var(--linear, linear-gradient(135deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%));
+  background: var(--linear, linear-gradient(135deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%));
   -webkit-box-shadow: 0px 0px 30px 0px rgba(27, 28, 53, 0.65) inset;
           box-shadow: 0px 0px 30px 0px rgba(27, 28, 53, 0.65) inset;
 }
@@ -7245,8 +7245,8 @@ select:visited {
   font-size: 68px;
   font-weight: 700;
   display: inline-block;
-  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #F95055), to(#CA2DB8));
-  background: linear-gradient(90deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #FF5733), to(#CA2DB8));
+  background: linear-gradient(90deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -7255,8 +7255,8 @@ select:visited {
   bottom: 0;
   font-size: 54px;
   font-weight: 300;
-  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #F95055), to(#CA2DB8));
-  background: linear-gradient(90deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #FF5733), to(#CA2DB8));
+  background: linear-gradient(90deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -7305,7 +7305,7 @@ select:visited {
   border-radius: 50px;
   display: inline-block;
   font-family: var(--heading);
-  background: linear-gradient(135deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: linear-gradient(135deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
 }
 
 .bi-pricing-plan-content-4 {
@@ -7476,7 +7476,7 @@ select:visited {
           transform: scale(0);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  background: linear-gradient(135deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: linear-gradient(135deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
 }
 .bi-testimonial-slider-nav-4 .swiper-slide-prev .testimonial_nav,
 .bi-testimonial-slider-nav-4 .swiper-slide-next .testimonial_nav {
@@ -7504,8 +7504,8 @@ select:visited {
 }
 .bi-testimonial-slider-nav-4 .testimonial-prev_4:hover,
 .bi-testimonial-slider-nav-4 .testimonial-next_4:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #F95055), to(#CA2DB8));
-  background: linear-gradient(90deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #FF5733), to(#CA2DB8));
+  background: linear-gradient(90deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -7660,7 +7660,7 @@ select:visited {
   border-radius: 10px;
   -webkit-transition: all 800ms ease;
   transition: all 800ms ease;
-  background: linear-gradient(135deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: linear-gradient(135deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.65) inset;
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.65) inset;
 }
@@ -7676,8 +7676,8 @@ select:visited {
           box-shadow: 0px 0px 0px 1px rgba(255, 56, 56, 0.5);
 }
 .bi-blog-item-4 .blog-meta a {
-  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #F95055), to(#CA2DB8));
-  background: linear-gradient(90deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #FF5733), to(#CA2DB8));
+  background: linear-gradient(90deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -7743,8 +7743,8 @@ select:visited {
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
-  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #F95055), to(#CA2DB8));
-  background: linear-gradient(90deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #FF5733), to(#CA2DB8));
+  background: linear-gradient(90deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -17158,7 +17158,7 @@ CSS INDEX
   transform: scale(0);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  background: linear-gradient(135deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: linear-gradient(135deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
 }
 
 .hpt-testimonial-slider-nav-4 .swiper-slide-prev .testimonial_nav,
@@ -17207,8 +17207,8 @@ CSS INDEX
 
 .hpt-testimonial-slider-nav-4 .testimonial-prev_4:hover,
 .hpt-testimonial-slider-nav-4 .testimonial-next_4:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #F95055), to(#CA2DB8));
-  background: linear-gradient(90deg, #EB5C18 0%, #F95055 45.72%, #CA2DB8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#EB5C18), color-stop(45.72%, #FF5733), to(#CA2DB8));
+  background: linear-gradient(90deg, #EB5C18 0%, #FF5733 45.72%, #CA2DB8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

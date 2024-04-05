@@ -2365,7 +2365,7 @@ select:visited {
 .bi-quality-feature-item:before {
   top: 50%;
   right: 0;
-  color: #ff7425;
+  color: #FFCC1D;
   font-size: 55px;
   content: "\f061";
   font-weight: 900;
@@ -3561,7 +3561,7 @@ select:visited {
 .bi-key-feature-item .bi-key-feature-list li:before {
   top: 0;
   left: 0;
-  color: #763fce;
+  color: #FFCC1D;
   content: "\f055";
   font-weight: 900;
   position: absolute;
@@ -20911,7 +20911,7 @@ CSS INDEX
   padding-left: 70px;
 }
 .bi-footer-cta-content-2 .bi-footer-newslatter-form span {
-  color: #f5f9fa;
+  color: #FFCC1D;
   font-size: 15px;
   font-weight: 700;
   max-width: 110px;
@@ -20930,35 +20930,35 @@ CSS INDEX
   background-color: #1f2031;
 }
 .bi-footer-cta-content-2 .bi-footer-newslatter-form input::-webkit-input-placeholder {
-  color: #54357d;
+  color: #FFCC1D;
 }
 .bi-footer-cta-content-2 .bi-footer-newslatter-form input::-moz-placeholder {
-  color: #54357d;
+  color: #FFCC1D;
 }
 .bi-footer-cta-content-2 .bi-footer-newslatter-form input:-ms-input-placeholder {
-  color: #54357d;
+  color: #FFCC1D;
 }
 .bi-footer-cta-content-2 .bi-footer-newslatter-form input::-ms-input-placeholder {
-  color: #54357d;
+  color: #FFCC1D;
 }
 .bi-footer-cta-content-2 .bi-footer-newslatter-form input::placeholder {
-  color: #54357d;
+  color: #FFCC1D;
 }
 .bi-footer-cta-content-2 .bi-footer-newslatter-form button {
   top: 0;
   right: 0;
-  color: #fff;
+  color: #11111;
   height: 57px;
   border: none;
   position: absolute;
   padding: 0px 30px;
   border-radius: 30px;
-  background-color: #301256;
+  background-color: #FFCC1D;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 .bi-footer-cta-content-2 .bi-footer-newslatter-form button:hover {
-  background-color: var(--base-color);
+  background-color: #11111;
 }
 
 .bi-footer-widget-content-2 {

@@ -1402,11 +1402,11 @@
     <script src="assets/js/script.js"></script>
 
 	<script>
-		const createURL = (url) => `http://localhost:1337${url}`;
+		const createURL = (url) => `https://hashtagstrapi-2f857d5493de.herokuapp.com${url}`;
 		const createAPI = (url) => createURL(`/api/${url}`);
 
 		$(document).ready(function(){
-			jQuery.get('http://localhost:1337/api/home?populate[0]=employees.image').then(({ data }) => {
+			jQuery.get(createAPI('/home?populate[0]=employees.image')).then(({ data }) => {
 				const employees = data.attributes.employees;
 
 				employees.map(({name, field, image, links}) => $("#team-section-list").append(`

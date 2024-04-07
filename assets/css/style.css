@@ -3770,8 +3770,8 @@ select:visited {
   overflow: hidden;
   border-radius: 100%;
   border: 12px solid #171926;
-  -webkit-box-shadow: 0px 0px 76px 0px rgba(255, 56, 56, 0.15);
-  box-shadow: 0px 0px 76px 0px rgba(255, 56, 56, 0.15);
+  -webkit-box-shadow: 0px 0px 76px 0px rgba(255, 204, 29, 0.15);
+  box-shadow: 0px 0px 76px 0px rgba(255, 204, 29, 0.15);
 }
 
 .bi-about-text-area-2 {

@@ -1245,7 +1245,8 @@ Last change:    00/00/00
 					];
 			},
 		}
-	}
+	};
+	document.Haptic = Haptic;
 	jQuery(document).ready(function (){
 		Haptic.init();
 	});

@@ -23220,3 +23220,7 @@ CSS INDEX
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
+
+section{
+  overflow-x: hidden !important
+}

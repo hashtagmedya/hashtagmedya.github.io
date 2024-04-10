@@ -23224,3 +23224,6 @@ CSS INDEX
 section{
   overflow-x: hidden !important
 }
+#bi-about-2{
+  overflow-y: hidden !important;
+}

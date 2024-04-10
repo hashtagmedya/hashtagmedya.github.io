@@ -687,7 +687,7 @@ select:visited {
 }
 .bi-section-title-2 h2 {
   color: #fff;
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: 200;
   line-height: 1.333;
 }
@@ -1823,7 +1823,7 @@ select:visited {
   top: 25px;
   right: 25px;
   cursor: pointer;
-  color: #d60606;
+  color: var(--base-color);
   font-size: 20px;
   position: absolute;
 }
@@ -2510,7 +2510,7 @@ select:visited {
 }
 .bi-quality-feature-item .feature-text h3 {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 .bi-quality-feature-item:hover:before {
@@ -2859,7 +2859,7 @@ select:visited {
 }
 .bi-counter-item-2 h3 {
   line-height: 1;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 600;
   max-width: 200px;
   margin-bottom: 5px;
@@ -2937,7 +2937,7 @@ select:visited {
   transform: translateY(-50%);
 }
 .bi-team-item-area .bi-team-text h3 {
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: 900;
   color: var(--title-color);
 }
@@ -3492,7 +3492,7 @@ select:visited {
   margin-right: 6px;
 }
 .bi-blog-item .bi-blog-text-area h3 {
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--title-color);
   padding-bottom: 18px;
@@ -3908,7 +3908,7 @@ select:visited {
   color: #fff;
 }
 .bi-sold-employe-counter-item .counter-text h3 {
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 700;
   padding-bottom: 5px;
 }
@@ -5385,7 +5385,7 @@ select:visited {
 }
 .bi-abut-feature-list li i {
   width: 30px;
-  font-size: 30px;
+  font-size: 1.4rem;
   margin-right: 15px;
   color: var(--base-color);
 }
@@ -5511,7 +5511,7 @@ select:visited {
   color: #fff;
   width: 90px;
   height: 90px;
-  font-size: 30px;
+  font-size: 1.4rem;
   position: relative;
   border-radius: 100%;
   background-color: var(--base-color);
@@ -5648,7 +5648,7 @@ select:visited {
 }
 .bi-team-item-3 .bi-team-text h3 {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 600;
   padding-bottom: 12px;
 }
@@ -6055,7 +6055,7 @@ select:visited {
   color: #fff;
   height: 100px;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 1.4rem;
   visibility: hidden;
   border-radius: 100%;
   -webkit-transform: translateY(-50%);
@@ -6093,7 +6093,7 @@ select:visited {
   opacity: 0;
   visibility: hidden;
   color: #fff;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 700;
   -webkit-transition: all 700ms ease;
   transition: all 700ms ease;
@@ -6332,7 +6332,7 @@ select:visited {
   background-color: rgba(255, 56, 56, 0.1);
 }
 .bi-blog-item-3 .more_btn i {
-  font-size: 30px;
+  font-size: 1.4rem;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -6919,7 +6919,7 @@ select:visited {
 }
 .bi-abut-feature-list-4 li i {
   width: 30px;
-  font-size: 30px;
+  font-size: 1.4rem;
   margin-right: 15px;
   color: var(--base-color);
 }
@@ -7044,7 +7044,7 @@ select:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 30px;
+  font-size: 1.4rem;
   border-radius: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -7632,7 +7632,7 @@ select:visited {
 }
 .bi-pricing-item-4 .plan-price span {
   display: block;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-family: var(--heading);
   color: rgba(255, 255, 255, 0.4);
 }
@@ -7759,7 +7759,7 @@ select:visited {
 }
 .bi-counter-item-2 h3 {
   line-height: 1;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 600;
   max-width: 200px;
   margin-bottom: 5px;
@@ -7871,7 +7871,7 @@ select:visited {
   left: 0;
   top: 50%;
   z-index: 2;
-  font-size: 30px;
+  font-size: 1.4rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -7912,7 +7912,7 @@ select:visited {
 }
 .bi-testimonial-item-4 .testimonial-author h3 {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 .bi-testimonial-item-4 .testimonial-author span {
@@ -8245,7 +8245,7 @@ select:visited {
   .bi-main-slider-next-prev .bi-main-slider-arrow-4 {
     width: 150px;
     height: 150px;
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-counter-section-4 .counter-landing.bi-counter-landing1 {
     left: -60%;
@@ -8385,7 +8385,7 @@ select:visited {
     display: none;
   }
   .bi-portfolio-item-4 .portfolio-text h3 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-blog-item-4 .blog-author-more {
     -ms-flex-wrap: wrap;
@@ -9230,7 +9230,7 @@ select:visited {
 }
 .hap-about-feature-item .feature-icon i {
   color: #000000;
-  font-size: 45px;
+  font-size: 2rem;
 }
 .hap-about-feature-item .feature-text h3 {
   font-size: 20px;
@@ -10015,7 +10015,7 @@ select:visited {
   z-index: 1;
   top: 50%;
   color: #000000;
-  font-size: 30px;
+  font-size: 1.4rem;
   position: absolute;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -10901,13 +10901,13 @@ select:visited {
     margin-bottom: 30px;
   }
   .hap-sponsor-content .hap-section-title h2 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .hap-section-title h2 {
     font-size: 50px;
   }
   .hap-service-item .service-title h3 {
-    font-size: 45px;
+    font-size: 2rem;
   }
   .hap-skill-img {
     margin: 0 auto;
@@ -10982,7 +10982,7 @@ select:visited {
     margin-bottom: 20px;
   }
   .hap-service-scroll-text-area h2 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .hap-service-scroll-text-area h2 .scroller_item_1 li {
     top: 10px;
@@ -11029,7 +11029,7 @@ select:visited {
     display: none;
   }
   .hap-service-item .service-title h3 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .hap-service-item .service-category a {
     padding: 8px 20px;
@@ -13357,7 +13357,7 @@ CSS INDEX
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .hpt-title-1 {
-    font-size: 45px;
+    font-size: 2rem;
   }
 }
 
@@ -15393,7 +15393,7 @@ CSS INDEX
 .hpt-cart-btn-1 {
   border: none;
   outline: none;
-  font-size: 30px;
+  font-size: 1.4rem;
   background: transparent;
   color: #fff;
 }
@@ -15457,7 +15457,7 @@ CSS INDEX
 .hpt-search-btn-1 {
   border: none;
   outline: none;
-  font-size: 30px;
+  font-size: 1.4rem;
   background: transparent;
   color: #fff;
 }
@@ -15667,7 +15667,7 @@ CSS INDEX
 }
 
 .redius-btn-1 {
-  font-size: 30px;
+  font-size: 1.4rem;
   width: 148px;
   height: 148px;
   line-height: 148px;
@@ -16104,7 +16104,7 @@ CSS INDEX
   padding: 0;
   margin: 0;
   font-family: "Kanit", sans-serif;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #00071a;
   line-height: 1.33;
@@ -16379,7 +16379,7 @@ CSS INDEX
 }
 @media (max-width: 767px) {
   .popup-search-box .title {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -16407,7 +16407,7 @@ CSS INDEX
 .popup-search-box-form .popup-search-box-close-action-btn {
   height: 60px;
   width: 60px;
-  font-size: 30px;
+  font-size: 1.4rem;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -16614,7 +16614,7 @@ CSS INDEX
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .htp-client-logo-1-wrap .title-wrap .title {
-    font-size: 45px;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -16624,7 +16624,7 @@ CSS INDEX
 }
 @media (max-width: 767px) {
   .htp-client-logo-1-wrap .title-wrap .title {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
 }
 
@@ -16672,7 +16672,7 @@ CSS INDEX
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hpt-client-logo-2 .htp-client-logo-1-wrap .title-wrap .title {
-    font-size: 45px;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -16682,7 +16682,7 @@ CSS INDEX
 }
 @media (max-width: 767px) {
   .hpt-client-logo-2 .htp-client-logo-1-wrap .title-wrap .title {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
 }
 
@@ -16850,7 +16850,7 @@ CSS INDEX
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .hpt-offer-1-item-single-hover .offer-1-title {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
 }
 .hpt-offer-1-item-single-hover .offer-1-feature {
@@ -17517,7 +17517,7 @@ CSS INDEX
   }
 }
 .hpt-testimonial-1-slider-1-content .left .text {
-  font-size: 30px;
+  font-size: 1.4rem;
   line-height: 1.44;
   font-weight: 400;
   color: #00071a;
@@ -17840,7 +17840,7 @@ CSS INDEX
   left: 0;
   top: 50%;
   z-index: 2;
-  font-size: 30px;
+  font-size: 1.4rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -19869,7 +19869,7 @@ CSS INDEX
 }
 .hpt-footer-logo .logo-mail h3 {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.4rem;
   padding-top: 10px;
   font-weight: 300;
   margin-bottom: 0;
@@ -20059,7 +20059,7 @@ CSS INDEX
 }
 .bi-service-feed-item .service-text h3 {
   color: #0e0e0e;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -20139,7 +20139,7 @@ CSS INDEX
   padding-bottom: 25px;
 }
 .bi-service-details-text-area .bi-service-details-text h4 {
-  font-size: 30px;
+  font-size: 1.4rem;
   padding-bottom: 20px;
 }
 .bi-service-details-text-area .bi-service-details-feature .service-star {
@@ -20717,7 +20717,7 @@ CSS INDEX
   padding-bottom: 25px;
 }
 .bi-portfolio-details-content h4 {
-  font-size: 30px;
+  font-size: 1.4rem;
 }
 .bi-portfolio-details-content p {
   padding-bottom: 25px;
@@ -20890,7 +20890,7 @@ CSS INDEX
 }
 .bi-blog-feed-item-3 .blog-text h3 {
   color: #0e0e0e;
-  font-size: 30px;
+  font-size: 1.4rem;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -20973,7 +20973,7 @@ CSS INDEX
   padding-bottom: 25px;
 }
 .bi-blog-details-text-area h4 {
-  font-size: 30px;
+  font-size: 1.4rem;
 }
 .bi-blog-details-text-area p {
   font-weight: 400;
@@ -21588,7 +21588,7 @@ CSS INDEX
 }
 .bi-footer-cta-content .bi-footer-cta-text h3 {
   color: #fff;
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.222;
 }
@@ -21690,7 +21690,7 @@ CSS INDEX
 }
 .bi-footer-logo .logo-mail {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.4rem;
   padding-top: 10px;
 }
 
@@ -22008,7 +22008,7 @@ CSS INDEX
     margin-right: 15px;
   }
   .bi-consult-btn-area .bi-consult-btn i {
-    font-size: 45px;
+    font-size: 2rem;
     margin-bottom: 10px;
   }
   .bi-testimonial-item-2 .bi-testimonial-text {
@@ -22057,7 +22057,7 @@ CSS INDEX
     margin-left: 20px;
   }
   .bi-skill-logo-text h2 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-header-section.header-style-one .bi-header-social a {
     margin-left: 8px;
@@ -22106,7 +22106,7 @@ CSS INDEX
     padding: 85px 90px 60px 30px;
   }
   .bi-faq-content-area .bi-section-title-1 h2 {
-    font-size: 45px;
+    font-size: 2rem;
   }
   .bi-service-list-item a {
     font-size: 40px;
@@ -22116,7 +22116,7 @@ CSS INDEX
     height: 75px;
   }
   .bi-sold-employe-text .bi-section-title-2 h2 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-portfolio-section-2 .bi-side-shape.shape_1 {
     display: none;
@@ -22252,7 +22252,7 @@ CSS INDEX
     line-height: 1.5;
   }
   .bi-section-title-3 h2 {
-    font-size: 45px;
+    font-size: 2rem;
     line-height: 1.5;
   }
   .bi-pricing-item-area-3 .bi-pricing-item-3 .plan-price {
@@ -22707,7 +22707,7 @@ CSS INDEX
     padding-top: 0;
   }
   .bi-service-list-item a {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-testimonial-item-2 {
     -ms-flex-wrap: wrap;
@@ -22734,7 +22734,7 @@ CSS INDEX
   }
   .bi-service-details-text-area .bi-service-details-text h3,
   .bi-service-details-text-area .bi-service-details-text h4 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-service-feed-item .service-text h3 {
     font-size: 26px;
@@ -22850,7 +22850,7 @@ CSS INDEX
     padding: 70px 0px 20px;
   }
   .bi-storyboard-item h3 {
-    font-size: 45px;
+    font-size: 2rem;
   }
   .bi-storyboard-item:before {
     display: none;
@@ -22865,7 +22865,7 @@ CSS INDEX
     padding: 60px 0px;
   }
   .bi-counter-item h3 {
-    font-size: 45px;
+    font-size: 2rem;
     margin-right: 20px;
   }
   .bi-counter-item:before,
@@ -22913,7 +22913,7 @@ CSS INDEX
     padding: 60px 0px;
   }
   .bi-blog-item .bi-blog-text-area h3 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-blog-item .bi-blog-text-area p {
     padding-bottom: 25px;
@@ -22930,7 +22930,7 @@ CSS INDEX
     font-size: 35px;
   }
   .bi-footer-widget .about-widget h3 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .scrollup {
     height: 45px;
@@ -22944,7 +22944,7 @@ CSS INDEX
     font-size: 20px;
   }
   .bi-banner-text h1 {
-    font-size: 45px;
+    font-size: 2rem;
   }
   .bi-btn-2 a {
     padding: 15px 20px;
@@ -22956,7 +22956,7 @@ CSS INDEX
     top: -45px;
   }
   .bi-section-title-2 h2 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-about-img2_2 {
     width: 200px;
@@ -22975,7 +22975,7 @@ CSS INDEX
     padding: 60px 0px;
   }
   .bi-consult-cta-text-area .bi-section-title-2 h2 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-consult-form-wrap .bi-consult-form-area .bi-consult-form-input {
     padding: 40px 30px 0px;
@@ -22993,7 +22993,7 @@ CSS INDEX
     padding: 100px 0px 80px;
   }
   .bi-video-play-content-2 .video-play-text h3 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-team-section-2 {
     padding: 60px 0px 30px;
@@ -23051,7 +23051,7 @@ CSS INDEX
     font-size: 65px;
   }
   .bi-slider-item-3 .bi-slider-text-3 h1 {
-    font-size: 45px;
+    font-size: 2rem;
   }
   .bi-slider-item-3 .bi-slider-text-3 .slider-img-desc {
     margin: 20px 0px;
@@ -23171,7 +23171,7 @@ CSS INDEX
     margin-left: 15px;
   }
   .bi-blog-details-text-area h3 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-blog-details-content {
     padding: 15px;
@@ -23187,7 +23187,7 @@ CSS INDEX
   }
   .bi-portfolio-details-content h3,
   .bi-portfolio-details-content h4 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
   .bi-career-item {
     background-image: none !important;

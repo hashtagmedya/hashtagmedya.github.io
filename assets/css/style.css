@@ -4385,7 +4385,6 @@ select:visited {
   transform: translateX(-30px);
 }
 .bi-team-item-2 .bi-team-img {
-  overflow: hidden;
   border-radius: 8px;
   margin-bottom: 25px;
 }

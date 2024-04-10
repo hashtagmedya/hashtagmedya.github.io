@@ -763,6 +763,10 @@
 	}
 }
 @media screen and (max-width: 680px) { 
+    body .cursor {
+        display: 'none'
+    }
+
 	.bi-footer-cta-content .bi-footer-cta-text {
 		padding-bottom: 15px;
 	}
@@ -1254,6 +1258,10 @@
 	}
 }
 @media screen and (max-width: 380px) { 
+	body .cursor {
+        display: 'none'
+    }
+
 	.bi-slider-item-3 .bi-slider-text-3 h1 {
 		font-size: 40px;
 	}
@@ -1262,6 +1270,11 @@
 	}
 }
 @media screen and (max-width: 360px) { 
+    body .cursor {
+        display: 'none'
+    }
+
+
 	.bi-header-cta-btn-grp .bi-btn-2 {
 		display: none;
 	}

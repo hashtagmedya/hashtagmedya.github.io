@@ -428,7 +428,7 @@ body {
   margin: 0;
   padding: 0;
   z-index: 1;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.667;
   position: relative;
   overflow-x: hidden;
@@ -738,7 +738,7 @@ select:visited {
 
 .bi-btn-1 a {
   color: #fff;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 700;
   overflow: hidden;
   position: relative;
@@ -946,7 +946,7 @@ select:visited {
 }
 .bi-header-section .dropdown-menu .dropdown-menu {
   top: 30px;
-  left: -100%;
+  left: 100%;
   min-width: 250px;
   transform-origin: 0 0 0;
   -webkit-transform-origin: 0 0 0;
@@ -1156,7 +1156,7 @@ select:visited {
   .bi-header-main-navigation
   .main-navigation
   li {
-  margin: 0px 32px;
+  margin: 0px 1.4rem;
 }
 .bi-header-section.header-style-two
   .bi-header-main-navigation
@@ -1245,7 +1245,10 @@ select:visited {
   font-family: var(--heading);
 }
 .bi-header-main-navigation .main-navigation li {
-  margin: 0px 28px;
+  margin-right: 36px;
+}
+.bi-header-main-navigation .main-navigation li:nth-last-child() {
+  margin-right: unset !important;
 }
 .bi-header-main-navigation .main-navigation li a {
   color: #fff;
@@ -8868,7 +8871,7 @@ select:visited {
 }
 .hap-header-section .dropdown-menu .dropdown-menu {
   top: 30px;
-  left: -100%;
+  left: 100%;
   transform-origin: 0 0 0;
   -webkit-transform-origin: 0 0 0;
   -ms-transform-origin: 0 0 0;
@@ -21904,11 +21907,11 @@ CSS INDEX
   .bi-header-section.header-style-two
     .bi-header-main-navigation
     .main-navigation
-    li {
-    margin: 0px 20px;
+    li:nth-last-of-type() {
+    margin-right: 20px;
   }
   .bi-header-section.header-style-two .bi-header-cta-btn-grp .cta-btn-info {
-    margin-left: 20px;
+    display: none !important;
   }
   .bi-header-section.header-style-two .bi-header-cta-btn-grp .cta-btn-area {
     margin-left: 15px;
@@ -21969,8 +21972,9 @@ CSS INDEX
   }
 }
 @media screen and (max-width: 1200px) {
+  html,
   body {
-    font-size: 16px;
+    font-size: 14px !important;
   }
   .bi-main-slide-item .side-shape {
     display: none;
@@ -22674,6 +22678,10 @@ CSS INDEX
   }
 }
 @media screen and (max-width: 680px) {
+  html,
+  body {
+    font-size: 12 !important;
+  }
   .bi-footer-cta-content .bi-footer-cta-text {
     padding-bottom: 15px;
   }
@@ -23199,6 +23207,11 @@ CSS INDEX
   }
 }
 @media screen and (max-width: 380px) {
+  html,
+  body {
+    font-size: 10px !important;
+  }
+
   .bi-slider-item-3 .bi-slider-text-3 h1 {
     font-size: 40px;
   }
@@ -23207,6 +23220,10 @@ CSS INDEX
   }
 }
 @media screen and (max-width: 360px) {
+  html,
+  body {
+    font-size: 10px !important;
+  }
   .bi-header-cta-btn-grp .bi-btn-2 {
     display: none;
   }
@@ -23220,9 +23237,25 @@ CSS INDEX
   transition-timing-function: linear !important;
 }
 
-section{
-  overflow-x: hidden !important
+section {
+  overflow-x: hidden !important;
 }
-#bi-about-2{
+#bi-about-2 {
   overflow-y: hidden !important;
+}
+
+@media screen and (max-width: 360px) {
+  .cursor {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cursor {
+    display: none !important;
+  }
+}
+
+.dropdown {
+  white-space: nowrap !important;
 }

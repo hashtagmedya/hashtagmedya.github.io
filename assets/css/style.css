@@ -899,7 +899,7 @@ select:visited {
   position: relative;
 }
 .bi-header-section .dropdown:after {
-  top: 5px;
+  top: 0.2rem;
   color: #fff;
   right: -15px;
   content: "\f107";
@@ -12010,8 +12010,7 @@ CSS INDEX
 .mr-190 {
   margin-right: 190px;
 }
-
-.mr-195 {
+.bi-header-section .dropdown:after .mr-195 {
   margin-right: 195px;
 }
 

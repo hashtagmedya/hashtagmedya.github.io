@@ -6015,6 +6015,7 @@ select:visited {
 .bi-portfolio-img-text-3 {
   z-index: 1;
   overflow: hidden;
+  border-radius: 8px;
 }
 .bi-portfolio-img-text-3:before {
   left: 0;
@@ -6033,12 +6034,12 @@ select:visited {
     left top,
     left bottom,
     from(rgba(255, 255, 255, 0)),
-    to(rgba(255, 56, 56, 0.8))
+    to(rgba(222, 225, 32, 0.8))
   );
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 56, 56, 0.8) 100%
+    rgba(222, 225, 32, 0.8) 100%
   );
 }
 .bi-portfolio-img-text-3 .portfolio-img img {
@@ -23257,4 +23258,15 @@ section {
 
 .dropdown {
   white-space: nowrap !important;
+}
+
+.portfolio-img {
+  min-height: 20rem;
+  background: #111318;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bi-portfolio-img-text-3 {
+  min-height: 20rem;
 }

@@ -5986,21 +5986,20 @@ select:visited {
   max-width: 1920px;
 }
 
-.bi-portfolio-filter-btn li {
+.bi-portfolio-filter-btn > div > div {
   color: #fff;
   cursor: pointer;
   font-weight: 600;
   margin-left: 5px;
-  padding: 15px 25px;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   background: #111318;
   text-transform: uppercase;
-  font-family: var(--heading);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-.bi-portfolio-filter-btn li.filtr-active,
-.bi-portfolio-filter-btn li:hover {
+.bi-portfolio-filter-btn > div > div.filtr-active,
+.bi-portfolio-filter-btn > div > div:hover {
   background-color: var(--base-color);
 }
 
@@ -20668,8 +20667,8 @@ CSS INDEX
 .bi-portfolio-feed-top-content .bi-section-title-3 h2 {
   color: #0e0e0e;
 }
-.bi-portfolio-feed-top-content .bi-portfolio-filter-btn li {
-  font-size: 14px;
+.bi-portfolio-feed-top-content .bi-portfolio-filter-btn > div > div {
+  font-size: 0.6rem;
 }
 
 .bi-portfolio-feed-section .bi-portfolio-feed-item-wrapper {
@@ -23124,7 +23123,7 @@ CSS INDEX
   .bi-portfolio-filter-btn {
     margin-top: 30px;
   }
-  .bi-portfolio-filter-btn li {
+  .bi-portfolio-filter-btn > div > div {
     margin: 5px;
     padding: 10px 20px;
   }

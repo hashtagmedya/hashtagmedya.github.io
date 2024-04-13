@@ -1211,7 +1211,7 @@
   .bi-portfolio-filter-btn {
     margin-top: 30px;
   }
-  .bi-portfolio-filter-btn li {
+  .bi-portfolio-filter-btn > div > div {
     margin: 5px;
     padding: 10px 20px;
   }

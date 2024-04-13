@@ -34,6 +34,7 @@
       ></a>
     </div>
     <div class="cursor"></div>
+    <div id="header-section"></div>
 
     <!-- Start of breadcrumb section
 	============================================= -->
@@ -81,14 +82,16 @@
             data-wow-delay="300ms"
             data-wow-duration="1500ms"
           >
-            <ul id="filters" class="nav-gallery">
-              <li class="filtr-button filtr-active" data-filter="all">
+            <ul id="filters" class="nav-gallery" style="display: none">
+              <li class="filtr-button filtr-active" category-filter="all">
                 see all
               </li>
-              <li class="filtr-button" data-filter="1">Business</li>
-              <li class="filtr-button" data-filter="2">Development</li>
-              <li class="filtr-button" data-filter="3">Web Design</li>
             </ul>
+            <div style="display: flex; gap: 0.6rem" id="filters-loading">
+              <div class="skeleton" style="width: 10rem; height: 3.5rem"></div>
+              <div class="skeleton" style="width: 10rem; height: 3.5rem"></div>
+              <div class="skeleton" style="width: 10rem; height: 3.5rem"></div>
+            </div>
           </div>
         </div>
         <div
@@ -96,267 +99,85 @@
         >
           <div
             class="bi-portfolio-item-3 filtr-item"
+            style="height: 27.5rem"
             data-category="1, 2"
             data-sort="Busy streets"
           >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
+            <div
+              class="bi-portfolio-img-text-3 position-relative"
+              style="height: 100%"
+            >
+              <div class="skeleton" style="width: 100%; height: 100%"></div>
             </div>
           </div>
           <div
             class="bi-portfolio-item-3 filtr-item"
-            data-category="1, 3"
-            data-sort="Busy streets"
-          >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bi-portfolio-item-3 filtr-item"
-            data-category="2"
-            data-sort="Busy streets"
-          >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bi-portfolio-item-3 filtr-item"
-            data-category="1"
-            data-sort="Busy streets"
-          >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bi-portfolio-item-3 filtr-item"
-            data-category="3"
-            data-sort="Busy streets"
-          >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bi-portfolio-item-3 filtr-item"
+            style="height: 27.5rem"
             data-category="1, 2"
             data-sort="Busy streets"
           >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
+            <div
+              class="bi-portfolio-img-text-3 position-relative"
+              style="height: 100%"
+            >
+              <div class="skeleton" style="width: 100%; height: 100%"></div>
             </div>
           </div>
           <div
             class="bi-portfolio-item-3 filtr-item"
-            data-category="1, 3"
+            style="height: 27.5rem"
+            data-category="1, 2"
             data-sort="Busy streets"
           >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
+            <div
+              class="bi-portfolio-img-text-3 position-relative"
+              style="height: 100%"
+            >
+              <div class="skeleton" style="width: 100%; height: 100%"></div>
             </div>
           </div>
           <div
             class="bi-portfolio-item-3 filtr-item"
-            data-category="2"
+            style="height: 27.5rem"
+            data-category="1, 2"
             data-sort="Busy streets"
           >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
+            <div
+              class="bi-portfolio-img-text-3 position-relative"
+              style="height: 100%"
+            >
+              <div class="skeleton" style="width: 100%; height: 100%"></div>
             </div>
           </div>
           <div
             class="bi-portfolio-item-3 filtr-item"
-            data-category="1"
+            style="height: 27.5rem"
+            data-category="1, 2"
             data-sort="Busy streets"
           >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
+            <div
+              class="bi-portfolio-img-text-3 position-relative"
+              style="height: 100%"
+            >
+              <div class="skeleton" style="width: 100%; height: 100%"></div>
             </div>
           </div>
           <div
             class="bi-portfolio-item-3 filtr-item"
-            data-category="3"
+            style="height: 27.5rem"
+            data-category="1, 2"
             data-sort="Busy streets"
           >
-            <div class="bi-portfolio-img-text-3 position-relative">
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/pf1.jpg" alt="" />
-              </div>
-              <a
-                class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                href="#"
-              >
-                <i class="fal fa-search"></i
-              ></a>
-              <div class="portfolio-text headline position-absolute">
-                <span><a href="#">Digital Marketing</a></span>
-                <h3><a href="#"> Digital Marketing </a></h3>
-                <a
-                  class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fal fa-long-arrow-right"></i
-                ></a>
-              </div>
+            <div
+              class="bi-portfolio-img-text-3 position-relative"
+              style="height: 100%"
+            >
+              <div class="skeleton" style="width: 100%; height: 100%"></div>
             </div>
           </div>
         </div>
         <div class="bi-pagination text-center ul-li">
-          <ul>
+          <!-- <ul>
             <li>
               <a href="#"><i class="fal fa-chevron-double-left"></i></a>
             </li>
@@ -366,7 +187,22 @@
             <li>
               <a href="#"><i class="fal fa-chevron-double-right"></i></a>
             </li>
-          </ul>
+          </ul> -->
+          <div
+            style="
+              display: flex;
+              gap: 0.6rem;
+              width: 100%;
+              justify-content: center;
+            "
+          >
+            <div class="skeleton" style="width: 2rem; height: 2.5rem"></div>
+            <div class="skeleton" style="width: 2rem; height: 2.5rem"></div>
+            <div class="skeleton" style="width: 2rem; height: 2.5rem"></div>
+            <div class="skeleton" style="width: 2rem; height: 2.5rem"></div>
+            <div class="skeleton" style="width: 2rem; height: 2.5rem"></div>
+            <div class="skeleton" style="width: 2rem; height: 2.5rem"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -506,8 +342,6 @@
         Copyright 2023 @webagency
       </div>
     </footer>
-    <!-- End of Footer  section
-	============================================= -->
 
     <!-- For Js Library -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -541,6 +375,94 @@
     <script src="assets/js/sectionLoaders.js"></script>
     <script src="assets/js/home/injectors.js"></script>
     <script src="assets/js/constants/api.js"></script>
-    <script></script>
+    <style>
+      .skeleton {
+        width: 100%;
+        height: 1rem;
+        background-color: #e9ecef;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .skeleton:after {
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(-100%);
+        z-index: 1;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0),
+          #f5f5f5,
+          rgba(255, 255, 255, 0)
+        );
+        animation: animation 1.2s infinite;
+      }
+
+      @keyframes animation {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(100%);
+        }
+      }
+    </style>
+    <script>
+      // project-categories
+      loadHeader();
+      $(document).ready(function () {
+        let categories = null;
+        const pageSize = 10;
+        let page = 1;
+
+        const fetchPortfolio = async (category) => {
+          fetch(createAPI("project-categories")).then(async (response) => {});
+        };
+
+        const handleCategoryClick = (event) => {
+          document
+            .getElementsByClassName("filtr-active")[0]
+            .classList.remove("filtr-active");
+          event.target.classList.add("filtr-active");
+
+          fetchPortfolio(event.target.getAttribute("category-filter"));
+        };
+
+        fetch(createAPI("project-categories")).then(async (response) => {
+          const { data } = await response.json();
+          document.getElementById("filters").style.display = "block";
+          document.getElementById("filters-loading").style.display = "none";
+
+          categories = data;
+          data.forEach((category) => {
+            const listItem = document.createElement("li");
+            listItem.setAttribute("category-filter", category?.id);
+            listItem.innerText = category?.attributes?.text;
+
+            listItem.addEventListener("click", (event) => {
+              const filter = event.target.getAttribute("category-filter");
+              const category = categories.find(
+                (category) => category?.id == filter
+              );
+
+              handleCategoryClick(event);
+            });
+            $("#filters").append(listItem);
+          });
+
+          document
+            .getElementsByClassName("filtr-button")[0]
+            .addEventListener("click", (event) => {
+              handleCategoryClick(event);
+            });
+          console.log(data);
+        });
+      });
+    </script>
   </body>
 </html>

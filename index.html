@@ -542,7 +542,7 @@
                           <div
                             class="bi-consult-btn text-uppercase text-center"
                           >
-						  <i class="fa-solid fa-question"></i>
+                            <i class="fa-solid fa-question"></i>
                             <span>
                               <h7 style="font-size: 60%"
                                 >Öneri/Talep/Şikayet</h7
@@ -565,7 +565,7 @@
                           <div
                             class="bi-consult-btn text-uppercase text-center"
                           >
-						  <i class="fa-solid fa-chalkboard-user"></i>
+                            <i class="fa-solid fa-chalkboard-user"></i>
                             <span
                               ><h7 style="font-size: 60%"
                                 >Hizmetlerimiz</h7
@@ -588,7 +588,7 @@
                           <div
                             class="bi-consult-btn text-uppercase text-center"
                           >
-						  <i class="fa-solid fa-briefcase"></i>
+                            <i class="fa-solid fa-briefcase"></i>
                             <span><h7 style="font-size: 60%">Kariyer</h7></span>
                           </div>
                         </div>
@@ -913,7 +913,7 @@
     <script src="assets/js/constants/api.js"></script>
     <script>
       loadHeader();
-
+      //http://localhost:1337/api/projects?pagination[page]=1&pagination[pageSize]=10&populate[0]=image&populate=project_category
       $(document).ready(function () {
         fetch(
           createAPI("home?populate[0]=employees.image&populate=employees.links")

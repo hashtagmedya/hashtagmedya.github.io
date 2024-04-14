@@ -52,10 +52,39 @@ const injectProjects = (projects) => {
 };
 
 const injectCategories = (categories) => {
-  categories.forEach((category) => {
+  let params = new URL(document.location).searchParams;
+  let subCategoryId = params.get("subCategoryId");
+
+  /*
+        <div
+              class="filtr-button filtr-active"
+              data-filter="all"
+            >
+              see all
+            </div>
+  */
+
+  const listItem = document.createElement("div");
+  listItem.classList.add("filtr-button");
+  listItem.setAttribute("data-filter", "all");
+  listItem.innerText = "see all";
+
+  listItem.addEventListener("click", () => {
+    window.history.pushState
+      ? window.history.pushState(
+          null,
+          null,
+          `?subCategoryId=all&subCategoryIdName=see all`
+        )
+      : (window.location.hash = `?subCategoryId=all&subCategoryIdName=see all`);
+  });
+  $("#filters").append(listItem);
+  categories.forEach((category, i) => {
     const listItem = document.createElement("div");
     listItem.setAttribute("data-filter", category?.id);
     listItem.classList.add("filtr-button");
+    parseInt(subCategoryId) === parseInt(category?.id) &&
+      listItem.classList.add("filtr-active");
     listItem.innerText = category?.attributes?.text;
     listItem.addEventListener("click", () => {
       window.history.pushState
@@ -68,4 +97,6 @@ const injectCategories = (categories) => {
     });
     $("#filters").append(listItem);
   });
+
+  document.Haptic.Basic.PortfolioFilterImage(subCategoryId);
 };

@@ -37,7 +37,6 @@ Last change:    00/00/00
         this.TeamSliderThree();
         this.TestimonialSliderThree();
         this.SponsorSlider3();
-        this.PortfolioFilterImage();
         this.BlogSliderThree();
       },
       preloader: function () {
@@ -918,7 +917,7 @@ Last change:    00/00/00
           },
         });
       },
-      PortfolioFilterImage: function () {
+      PortfolioFilterImage: function (defaultFilter = "all") {
         jQuery(window).on("load", function () {
           $(".filtr-container").imagesLoaded(function () {});
           var filterizd = $(".filtr-container");
@@ -926,6 +925,7 @@ Last change:    00/00/00
           if (filterizd.length) {
             filterizd.filterizr({
               layout: "sameWidth",
+              filter: defaultFilter,
             });
             $(".filtr-button").on("click", function () {
               $(".filtr-button.filtr-active").removeClass("filtr-active");

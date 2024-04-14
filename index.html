@@ -909,58 +909,10 @@
 
     <!-- For Musa Library -->
     <script src="assets/js/sectionLoaders.js"></script>
-    <script src="assets/js/home/injectors.js"></script>
     <script src="assets/js/constants/api.js"></script>
-    <script>
-      loadHeader();
-      //http://localhost:1337/api/projects?pagination[page]=1&pagination[pageSize]=10&populate[0]=image&populate=project_category
-      $(document).ready(function () {
-        fetch(
-          createAPI("home?populate[0]=employees.image&populate=employees.links")
-        )
-          .then(async (response) => {
-            const { data } = await response.json();
 
-            const employees = data.attributes.employees;
-
-            injectEmployees(employees);
-            injectEmployees(employees);
-            const teamSwiper = new Swiper(".team-section-swiper", {
-              autoplay: {
-                delay: 0,
-                pauseOnMouseEnter: true,
-              },
-              breakpoints: {
-                0: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 2,
-                },
-                1024: {
-                  slidesPerView: 3,
-                },
-              },
-              freeMode: true,
-              centeredSlides: true,
-              loop: true,
-              speed: 5000,
-              slidesPerView: 3,
-              spaceBetween: 30,
-              resizeObserver: true,
-            });
-            $(".team-section-swiper").mouseenter(function () {
-              console.log("stop", teamSwiper);
-
-              teamSwiper.autoplay.stop();
-            });
-
-            $(".team-section-swiper").mouseleave(function () {
-              teamSwiper.autoplay.start();
-            });
-          })
-          .catch(console.error);
-      });
-    </script>
+    <script src="assets/js/home/injectors.js"></script>
+    <script src="assets/js/home/index.js"></script>
+    <script src="assets/js/common/navbar.js"></script>
   </body>
 </html>

@@ -62,9 +62,9 @@ const injectCategories = (categories) => {
         ? window.history.pushState(
             null,
             null,
-            `?category=${category.id}&categoryName=${category.attributes.text}`
+            `?subCategoryId=${category.id}&subCategoryIdName=${category.attributes.text}`
           )
-        : (window.location.hash = `?category=${category.id}&categoryName=${category.attributes.text}`);
+        : (window.location.hash = `?subCategoryId=${category.id}&subCategoryIdName=${category.attributes.text}`);
     });
     $("#filters").append(listItem);
   });

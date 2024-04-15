@@ -28,11 +28,10 @@ loadHeader();
   // Desktop inject
   $(document).ready(function () {
     const $categoriesMenu = $("#categories-menu-desktop");
-    const $categoriesMenuMobile = $("#categories-menu-mobile");
     groupedCategories.map((category) => {
       $categoriesMenu.append(`
       <li class="dropdown">
-      <a href="#">${category?.text}</a>
+      <a>${category?.text}</a>
       ${
         category.subCategories.length > 0
           ? `
@@ -49,7 +48,6 @@ loadHeader();
     </ul>`
           : undefined
       }
-
     </li>
       `);
     });

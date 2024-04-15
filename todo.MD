@@ -1,5 +1,7 @@
-# Navbar categories fetch
+```
+project detail paragraphs should be more user friendly for admin think about it
+```
 
-# Search param connection with inital filter portfolio
-
-# Redirect to project detail page
+```
+abstract codes and reorganise later
+```

@@ -45,7 +45,7 @@ const injectProjects = (projects) => {
               </div>
             `;
     element.addEventListener("click", () => {
-      window.location.href = `project.html?id=${project.id}`;
+      window.location.href = `portfolio-detail.html?id=${project.id}`;
     });
     $("#bi-portfolio-feed-item-wrapper").append(element);
   });
@@ -66,6 +66,7 @@ const injectCategories = (categories) => {
 
   const listItem = document.createElement("div");
   listItem.classList.add("filtr-button");
+  subCategoryId === "all" && listItem.classList.add("filtr-active");
   listItem.setAttribute("data-filter", "all");
   listItem.innerText = "see all";
 
@@ -74,9 +75,9 @@ const injectCategories = (categories) => {
       ? window.history.pushState(
           null,
           null,
-          `?subCategoryId=all&subCategoryIdName=see all`
+          `?subCategoryId=all`
         )
-      : (window.location.hash = `?subCategoryId=all&subCategoryIdName=see all`);
+      : (window.location.hash = `?subCategoryId=all`);
   });
   $("#filters").append(listItem);
   categories.forEach((category, i) => {
@@ -97,6 +98,5 @@ const injectCategories = (categories) => {
     });
     $("#filters").append(listItem);
   });
-
   document.Haptic.Basic.PortfolioFilterImage(subCategoryId);
 };

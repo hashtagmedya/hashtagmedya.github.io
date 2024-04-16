@@ -7,7 +7,7 @@ loadHeader();
 
   fetch(
     createAPI(
-      `project-details?filters[id][$eq]=${projectId}&populate=bannerBgImage&populate=projectImage&populate=from&populate=to&populate=paragraphs.content&populate=project&populate=projectInfo.project_category&populate=projectInfo.links`
+      `project-details?filters[id][$eq]=${projectId}&populate=bannerBgImage&populate=projectImages&populate=from&populate=to&populate=paragraphs.content&populate=project&populate=projectInfo.project_category&populate=projectInfo.links`
     )
   ).then(async (response) => {
     const { data } = await response.json();
@@ -16,6 +16,9 @@ loadHeader();
     }
     projectDetail = data[0]?.attributes;
     const projectInfo = projectDetail.projectInfo;
+    const projectImages = projectDetail.projectImages.data;
+    const projectParagraphs = projectDetail.paragraphs;
+
     console.log(projectDetail);
 
     $("#project-title").text(projectDetail.title);
@@ -28,10 +31,22 @@ loadHeader();
       "data-background",
       createURL(projectDetail.bannerBgImage.data.attributes.url)
     );
-    $("#project-image").attr(
-      "src",
-      createURL(projectDetail.projectImage.data.attributes.url)
-    );
+    projectImages.forEach((projectImage) => {
+      $("#project-image-container").append(`
+        <img src="${createURL(projectImage.attributes.url)}" alt="${
+        projectImage.attributes.alt
+      }" style="margin: 0.5rem 0;border-radius: 0.5rem;" class="col-lg-4 col-md-6 col-sm-12">
+      `);
+    });
+
+    projectParagraphs.forEach((paragraph) => {
+      $("#project-description").append(`
+      <h3>${paragraph.title}</h3>
+      `);
+      $("#project-description").append(`
+      <p>${paragraph.content}</p>
+      `);
+    });
 
     const projectInfoHandlers = [
       {

@@ -21921,14 +21921,16 @@ CSS INDEX
     .inner-icon {
     margin-right: 10px;
   }
+  
   .bi-testimonial-content {
     padding-left: 130px;
   }
   .bi-testimonial-thumb {
     left: 0;
   }
-  .bi-banner-content .banner_img_2 {
-    bottom: 50px;
+  .bi-banner-content .bi-banner-img {
+    display: none;
+  }
   }
   .bi-slider-item-3 .bi-slider-text-3 {
     margin-left: 120px;
@@ -21937,6 +21939,9 @@ CSS INDEX
 @media screen and (max-width: 1400px) {
   .bi-team-item-3 {
     margin: 0 auto;
+  }
+  .bi-banner-content .bi-banner-img {
+    display: none;
   }
   .bi-testimonial-item-3 {
     margin: 0 auto;
@@ -21956,6 +21961,9 @@ CSS INDEX
   }
   .bi-service-list-item a {
     font-size: 60px;
+  }
+  .bi-banner-content .bi-banner-img {
+    display: none;
   }
   .bi-header-section.header-style-two .bi-header-cta-btn-grp .cta-btn-info {
     display: none !important;

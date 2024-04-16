@@ -6,7 +6,7 @@ const remoteURL = "https://hashtagstrapi-2f857d5493de.herokuapp.com";
  * @param {string} url
  * @returns {string}
  */
-const createURL = (url) => `${localURL}${url}`;
+const createURL = (url) => `${remoteURL}${url}`;
 
 /**
  * @description Create API URL for fetches

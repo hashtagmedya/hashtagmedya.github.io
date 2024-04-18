@@ -1347,3 +1347,14 @@ Last change:    00/00/00
     Haptic.init();
   });
 })();
+
+/**
+ * Format date
+ * @param {string} iso
+ * @returns {string}
+ */
+const formatDate = (iso) => {
+  const options = { day: "numeric", month: "long", year: "numeric" };
+  const date = new Date(iso);
+  return date.toLocaleDateString("tr-TR", options);
+};

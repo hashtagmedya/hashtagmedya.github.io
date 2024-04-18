@@ -13,3 +13,16 @@ fetch(createAPI("home?populate[0]=employees.image&populate=employees.links"))
     });
   })
   .catch(console.error);
+
+fetch(
+  createAPI(
+    "blogs?filters[featured][$eq]=true&populate=imageHome&populate=blog_tag.text&populate=users_permissions_user.image&pagination[pageSize]=6"
+  )
+)
+  .then(async (response) => {
+    const { data: blogs } = await response.json();
+    $(document).ready(function () {
+      injectBlogs(blogs);
+    });
+  })
+  .catch(console.error);

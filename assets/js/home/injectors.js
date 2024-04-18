@@ -83,3 +83,56 @@ const injectSlider = () => {
     resizeObserver: true,
   });
 };
+
+const injectBlogs = (blogs) => {
+  const createHref = (id) => `blog.html?id=${id}`;
+
+  blogs.forEach((blog) => {
+    const {
+      id,
+      attributes: {
+        title,
+        createdAt,
+        imageHome: {
+          data: {
+            attributes: { url: imageURL },
+          },
+        },
+        blog_tag: {
+          data: {
+            attributes: { text: blogTag },
+          },
+        },
+        users_permissions_user: user,
+      },
+    } = blog;
+
+    $("#blogs-section").append(`
+    <div
+      class="col-lg-4 col-md-6 wow fadeInUp"
+      data-wow-delay="100ms"
+      data-wow-duration="1200ms"
+    >
+      <div class="bi-blog-item-2">
+        <div class="blog-img-area position-relative">
+          <div class="blog-img">
+            <img src=${createURL(imageURL)} alt="" />
+          </div>
+        </div>
+        <div class="bi-blog-text headline">
+          <div class="blog-meta text-uppercase">
+            <a href=${createHref(id)}>${blogTag}</a>
+            <a href=${createHref(id)}>${formatDate(createdAt)}</a>
+          </div>
+          <h3>
+            <a href="blog-single.html">${title}</a>
+          </h3>
+          <a class="read_more text-uppercase" href=${createHref(id)}>
+            DEVAMINI OKU<i class="fas fa-plus-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+`);
+  });
+};

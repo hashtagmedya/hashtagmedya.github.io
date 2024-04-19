@@ -864,6 +864,12 @@ select:visited {
   border: 1px solid var(--base-color);
 }
 
+.bi-pagination li.active a{
+  color: #fff;
+  background-color: var(--base-color);
+  border: 1px solid var(--base-color);
+}
+
 .error-text-btn {
   margin-top: 80px;
 }
@@ -20869,6 +20875,7 @@ CSS INDEX
 .bi-blog-feed-item-3 .blog-img img {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  width: 100%;
 }
 .bi-blog-feed-item-3 .blog-meta {
   color: #fff;
@@ -20928,6 +20935,7 @@ CSS INDEX
 .bi-blog-feed-item-3:hover .blog-img img {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 /*---------------------------------------------------- */

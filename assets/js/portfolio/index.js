@@ -21,5 +21,9 @@ loadHeader();
     $("#bi-portfolio-feed-item-wrapper-loading").addClass("d-none");
 
     injectProjects(data);
+
+    let params = new URL(document.location).searchParams;
+    let subCategoryId = params.get("subCategoryId") || "all";
+    document.Haptic.Basic.PortfolioFilterImage(subCategoryId);
   });
 })();

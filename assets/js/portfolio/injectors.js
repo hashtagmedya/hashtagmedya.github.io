@@ -92,5 +92,4 @@ const injectCategories = (categories) => {
     });
     $("#filters").append(listItem);
   });
-  document.Haptic.Basic.PortfolioFilterImage(subCategoryId);
 };

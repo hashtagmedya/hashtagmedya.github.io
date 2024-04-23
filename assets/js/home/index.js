@@ -8,7 +8,6 @@ fetch(createAPI("home?populate[0]=employees.image&populate=employees.links"))
 
     $(document).ready(function () {
       injectEmployees(employees);
-      injectEmployees(employees);
       injectSlider();
     });
   })

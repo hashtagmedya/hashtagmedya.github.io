@@ -8,7 +8,7 @@ const injectEmployees = (employees) =>
   employees.map(({ name, field, image, links }, index) =>
     $("#team-section-list").append(`
 <div class="swiper-slide" data-hash=${index}>
-<div class="wow fadeInUp"  data-wow-delay="400ms" data-wow-duration="1200ms">
+<div>
         <div class="bi-team-item-2 text-center">
             <div class="bi-team-img-shape position-relative">
                 <span class="team-shape shape_1 position-absolute"><img src="assets/img/icon/tm-shape3.png" alt=""></span>
@@ -74,10 +74,9 @@ const injectSlider = () => {
         slidesPerView: 3,
       },
     },
-    freeMode: true,
     centeredSlides: true,
     loop: true,
-    speed: 5000,
+    speed: 3000,
     slidesPerView: 3,
     spaceBetween: 30,
     resizeObserver: true,

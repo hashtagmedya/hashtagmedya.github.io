@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "John Doe" );
-define( "RECIPIENT_EMAIL", "example@gmail.com" ); //write your mail here
+define( "RECIPIENT_NAME", "Hashtag Medya" );
+define( "RECIPIENT_EMAIL", "info@hashtagmedya.com" ); //write your mail here
 
 // Read the form values
 $success = false;
@@ -20,7 +20,7 @@ if ( $userName && $senderEmail && $senderPhone && $userSubject && $message) {
   $success = mail( $recipient, $headers, $msgBody );
 
   //Set Location After Successsfull Submission
-  header('Location: contact.html?message=Successfull');
+  header('Location: iletisim.html?message=Successfull');
 }
 
 else{

@@ -66,7 +66,7 @@ const injectCategories = (categories) => {
   listItem.classList.add("filtr-button");
   subCategoryId === "all" && listItem.classList.add("filtr-active");
   listItem.setAttribute("data-filter", "all");
-  listItem.innerText = "see all";
+  listItem.innerText = "Hepsı";
 
   listItem.addEventListener("click", () => {
     window.history.pushState

@@ -80,6 +80,7 @@ const injectSlider = () => {
     slidesPerView: 3,
     spaceBetween: 30,
     resizeObserver: true,
+    preventInteractionOnTransition: true,
   });
 };
 

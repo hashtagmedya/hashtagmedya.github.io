@@ -29,23 +29,21 @@ const injectProjects = (projects) => {
                 </div>
                 <a
                   class="porfolio-icon position-absolute d-flex align-items-center justify-content-center"
-                  href="#"
                 >
                   <i class="fal fa-search"></i
                 ></a>
                 <div class="portfolio-text headline position-absolute">
-                  <span><a href="#">${projectTitle}</a></span>
-                  <h3><a href="#">${projectSubtitle}</a></h3>
+                  <span><a>${projectTitle}</a></span>
+                  <h3><a>${projectSubtitle}</a></h3>
                   <a
                     class="more_btn position-absolute d-flex align-items-center justify-content-center"
-                    href="#"
                     ><i class="fal fa-long-arrow-right"></i
                   ></a>
                 </div>
               </div>
             `;
     element.addEventListener("click", () => {
-      window.location.href = `portfolio-detail.html?id=${project.id}`;
+      window.location.href = `proje-detay.html?id=${project.id}`;
     });
     $("#bi-portfolio-feed-item-wrapper").append(element);
   });
@@ -53,7 +51,7 @@ const injectProjects = (projects) => {
 
 const injectCategories = (categories) => {
   let params = new URL(document.location).searchParams;
-  let subCategoryId = params.get("subCategoryId");
+  let subCategoryId = params.get("subCategoryId") || "all";
 
   /*
         <div
@@ -72,11 +70,7 @@ const injectCategories = (categories) => {
 
   listItem.addEventListener("click", () => {
     window.history.pushState
-      ? window.history.pushState(
-          null,
-          null,
-          `?subCategoryId=all`
-        )
+      ? window.history.pushState(null, null, `?subCategoryId=all`)
       : (window.location.hash = `?subCategoryId=all`);
   });
   $("#filters").append(listItem);

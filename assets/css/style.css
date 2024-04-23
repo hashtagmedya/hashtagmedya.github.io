@@ -20923,6 +20923,7 @@ CSS INDEX
   font-size: 20px;
   font-weight: 700;
   font-family: var(--heading);
+  white-space: nowrap;
 }
 .bi-blog-feed-item-3 .blog-author-more .blog-more a {
   font-weight: 600;
@@ -20951,6 +20952,9 @@ CSS INDEX
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 30px;
+}
+.bi-blog-details-img img{
+  width: 100%;
 }
 
 .bi-blog-details-meta {

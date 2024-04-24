@@ -3,8 +3,6 @@ loadHeader();
 (function () {
   let categories = null;
   let params = new URL(document.location).searchParams;
-  let subCategoryId = params.get("subCategoryId") || "all";
-  document.Haptic.Basic.PortfolioFilterImage(subCategoryId);
 
   fetch(createAPI("project-subcategories")).then(async (response) => {
     const { data } = await response.json();
@@ -24,5 +22,8 @@ loadHeader();
     $("#bi-portfolio-feed-item-wrapper-loading").addClass("d-none");
 
     injectProjects(data);
+
+    let subCategoryId = params.get("subCategoryId") || "all";
+    document.Haptic.Basic.PortfolioFilterImage(subCategoryId);
   });
 })();

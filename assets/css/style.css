@@ -23630,8 +23630,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .bi-footer-cta-content {
   overflow: hidden;
-  padding: 65px 105px;
-  border-radius: 10px;
+  padding: 6rem 10rem;
 }
 
 .bi-footer-cta-content .bi-footer-cta-text {

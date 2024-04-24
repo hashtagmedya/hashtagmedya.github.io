@@ -39,9 +39,11 @@ Last change:    00/00/00
         this.BlogSliderThree();
       },
       preloader: function () {
-        jQuery("#preloader").fadeOut("slow", function () {
-          jQuery(this).remove();
-        });
+        setTimeout(function () {
+          jQuery("#preloader").fadeOut("slow", function () {
+            jQuery(this).remove();
+          });
+        }, 800);
       },
       BackgroundImage: function () {
         $("[data-background]").each(function () {

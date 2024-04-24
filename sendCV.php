@@ -5,40 +5,69 @@ define("RECIPIENT_NAME", "Hashtag Medya");
 define("RECIPIENT_EMAIL", "info@hashtagmedya.com"); // Replace with your email address
 
 // Read the form values
-$userName = isset($_GET['name']) ? $_GET['name'] : "";
-$userSurname = isset($_GET['surname']) ? $_GET['surname'] : "";
-$userEmail = isset($_GET['email']) ? $_GET['email'] : "";
-$subject = isset($_GET['subject']) ? $_GET['subject'] : "";
-$city = isset($_GET['city']) ? $_GET['city'] : "";
-$position = isset($_GET['position']) ? $_GET['position'] : "";
-$portfolioLink = isset($_GET['portfolio']) ? $_GET['portfolio'] : "";
-$salaryExpectation = isset($_GET['salary']) ? $_GET['salary'] : "";
-$message = isset($_GET['message']) ? $_GET['message'] : "";
+$userName = isset($_POST['name']) ? $_POST['name'] : "";
+$userSurname = isset($_POST['surname']) ? $_POST['surname'] : "";
+$userEmail = isset($_POST['email']) ? $_POST['email'] : "";
+$subject = isset($_POST['subject']) ? $_POST['subject'] : "";
+$city = isset($_POST['city']) ? $_POST['city'] : "";
+$position = isset($_POST['position']) ? $_POST['position'] : "";
+$portfolioLink = isset($_POST['portfolio']) ? $_POST['portfolio'] : "";
+$salaryExpectation = isset($_POST['salary']) ? $_POST['salary'] : "";
+$message = isset($_POST['message']) ? $_POST['message'] : "";
 
-// Construct email body
-$emailBody = "Isim: $userName\n";
-$emailBody .= "Soyisim: $userSurname\n";
-$emailBody .= "Email: $userEmail\n";
-$emailBody .= "Konu: $subject\n";
-$emailBody .= "Şehir: $city\n";
-$emailBody .= "Pozisyon: $position\n";
-$emailBody .= "Portfolio Link: $portfolioLink\n";
-$emailBody .= "Maas Beklentisi: $salaryExpectation\n";
-$emailBody .= "Mesaj: $message\n";
+// Check if the file was uploaded successfully
+if (isset($_FILES['file']) && $_FILES['file']['error'] == UPLOAD_ERR_OK) {
+    // File details
+    $fileTmpPath = $_FILES['file']['tmp_name'];
+    $fileName = $_FILES['file']['name'];
+    $fileSize = $_FILES['file']['size'];
+    $fileType = $_FILES['file']['type'];
+    $fileNameCmps = explode(".", $fileName);
+    $fileExtension = strtolower(end($fileNameCmps));
 
-// Set email headers
-$headers = "From: $userName <$userEmail>";
+    // Valid extensions
+    $allowedExtensions = array("txt", "pdf", "doc", "docx");
 
-// Send the email
-$mailSent = mail(RECIPIENT_EMAIL, $subject, $emailBody, $headers);
+    // Check if the file extension is valid
+    if (in_array($fileExtension, $allowedExtensions)) {
+        // File destination
+        $uploadPath = "uploads/" . $fileName;
 
-// Check if the mail was sent successfully
-if ($mailSent) {
-    // Redirect to success page
-    header('Location: kariyer.html?message=success');
+        // Move uploaded file to destination
+        move_uploaded_file($fileTmpPath, $uploadPath);
+
+        // Construct email body
+        $emailBody = "Isim: $userName\n";
+        $emailBody .= "Soyisim: $userSurname\n";
+        $emailBody .= "Email: $userEmail\n";
+        $emailBody .= "Konu: $subject\n";
+        $emailBody .= "Şehir: $city\n";
+        $emailBody .= "Pozisyon: $position\n";
+        $emailBody .= "Portfolio Link: $portfolioLink\n";
+        $emailBody .= "Maas Beklentisi: $salaryExpectation\n";
+        $emailBody .= "Mesaj: $message\n";
+        $emailBody .= "CV/Özgeçmiş: $uploadPath\n";
+
+        // Set email headers
+        $headers = "From: $userName <$userEmail>";
+
+        // Send the email
+        $mailSent = mail(RECIPIENT_EMAIL, $subject, $emailBody, $headers);
+
+        // Check if the mail was sent successfully
+        if ($mailSent) {
+            // Redirect to success page
+            header('Location: kariyer.html?message=success');
+        } else {
+            // Redirect to error page
+            header('Location: 404.html');
+        }        
+    } else {
+        // Invalid file extension, redirect to error page
+        header('Location: 404.html');
+    }
 } else {
-    // Redirect to error page
+    // File upload error, redirect to error page
     header('Location: 404.html');
 }
-
 ?>

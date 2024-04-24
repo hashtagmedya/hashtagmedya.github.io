@@ -23621,14 +23621,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .bi-footer-cta:before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  content: "";
-  z-index: -1;
-  height: 50%;
-  position: absolute;
-  background-color: #fff;
+
 }
 
 .bi-footer-cta.black-footer:before {

@@ -8,6 +8,8 @@ const loadHeader = () => {
 
 const loadFooter = () => {
   $(function () {
-    $("#footer-section").load("components/footer.html");
+    $("#footer-section").load("components/footer.html", function () {
+      document.Haptic.Basic.BackgroundImage();
+    });
   });
 };

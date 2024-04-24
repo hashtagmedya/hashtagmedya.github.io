@@ -61,7 +61,6 @@ const injectSlider = () => {
   new Swiper(".team-section-swiper", {
     autoplay: {
       delay: 0,
-      pauseOnMouseEnter: true,
     },
     breakpoints: {
       0: {

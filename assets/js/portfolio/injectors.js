@@ -53,15 +53,6 @@ const injectCategories = (categories) => {
   let params = new URL(document.location).searchParams;
   let subCategoryId = params.get("subCategoryId") || "all";
 
-  /*
-        <div
-              class="filtr-button filtr-active"
-              data-filter="all"
-            >
-              see all
-            </div>
-  */
-
   const listItem = document.createElement("div");
   listItem.classList.add("filtr-button");
   subCategoryId === "all" && listItem.classList.add("filtr-active");

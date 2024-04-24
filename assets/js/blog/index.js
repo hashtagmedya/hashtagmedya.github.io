@@ -43,6 +43,15 @@
               },
             },
           } = blog;
+
+          $("#bi-breadcrumbs").css(
+            "background-image",
+            `url(${createURL(imageLandscapeURL)})`
+          );
+          $("#bi-breadcrumbs").css("background-position", "center center");
+          $("#bi-breadcrumbs").css("background-size", "cover");
+          $("#bi-breadcrumbs").css("background-repeat", "no-repeat");
+
           $("#blog-detail-title").text(title);
           $("#blog-detail-meta").append(`
                 <li>

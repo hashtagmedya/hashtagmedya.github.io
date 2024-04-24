@@ -18,6 +18,7 @@
       $(document).ready(function () {
         injectBlogs(blogs);
         injectPagination(pageCount, page);
+        document.Haptic.Basic.preloader();
       });
     })
     .catch(console.error);

@@ -26,5 +26,6 @@ loadHeader();
 
       let subCategoryId = params.get("subCategoryId") || "all";
       document.Haptic.Basic.PortfolioFilterImage(subCategoryId);
+      document.Haptic.Basic.preloader();
     });
 })();

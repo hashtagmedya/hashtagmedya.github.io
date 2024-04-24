@@ -22,6 +22,7 @@ fetch(
     const { data: blogs } = await response.json();
     $(document).ready(function () {
       injectBlogs(blogs);
+      document.Haptic.Basic.preloader();
     });
   })
   .catch(console.error);

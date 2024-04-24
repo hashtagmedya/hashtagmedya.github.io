@@ -127,5 +127,6 @@ loadHeader();
         $("#project-info-social-media").append(handler.handler());
     });
     document.Haptic.Basic.BackgroundImage();
+    document.Haptic.Basic.preloader();
   });
 })();

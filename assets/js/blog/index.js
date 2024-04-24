@@ -109,6 +109,7 @@
               : ""
           }
           `);
+          document.Haptic.Basic.preloader();
         } catch (error) {
           console.error(error);
         }

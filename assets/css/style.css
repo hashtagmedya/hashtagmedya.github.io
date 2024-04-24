@@ -4086,6 +4086,7 @@ select:visited {
 /*----------------------------------------------------*/
 .bi-service-section-2 {
   padding: 70px 0px 140px;
+  overflow: hidden;
 }
 
 .hover-reveal {
@@ -6509,7 +6510,9 @@ select:visited {
 .bi-portfolio-item-3 {
   width: 33.33%;
 }
-
+.bi-portfolio-item-3:hover{
+  cursor: pointer;
+}
 .bi-portfolio-feed-item-wrapper {
   margin: 50px 0px;
 }
@@ -22097,7 +22100,6 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .bi-single-sidebar {
-  top: 110px;
   position: sticky;
   padding-left: 15px;
 }

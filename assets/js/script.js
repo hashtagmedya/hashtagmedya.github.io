@@ -907,21 +907,20 @@ Last change:    00/00/00
         });
       },
       PortfolioFilterImage: function (defaultFilter = "all") {
-        jQuery(window).on("load", function () {
-          $(".filtr-container").imagesLoaded(function () {});
-          var filterizd = $(".filtr-container");
+        $(".filtr-container").imagesLoaded(function () {});
+        var filterizd = $(".filtr-container");
+        console.log(filterizd, defaultFilter, "filterizd", filterizd.length);
+        if (filterizd.length) {
+          filterizd.filterizr({
+            layout: "sameWidth",
+            filter: defaultFilter,
+          });
+          $(".filtr-button").on("click", function () {
+            $(".filtr-button.filtr-active").removeClass("filtr-active");
+            $(this).addClass("filtr-active");
+          });
+        }
 
-          if (filterizd.length) {
-            filterizd.filterizr({
-              layout: "sameWidth",
-              filter: defaultFilter,
-            });
-            $(".filtr-button").on("click", function () {
-              $(".filtr-button.filtr-active").removeClass("filtr-active");
-              $(this).addClass("filtr-active");
-            });
-          }
-        });
         let imageBins = gsap.timeline({
           scrollTrigger: {
             trigger: ".portfolio-img",

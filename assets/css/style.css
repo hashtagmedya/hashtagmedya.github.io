@@ -6497,7 +6497,6 @@ select:visited {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   background: #111318;
-  text-transform: uppercase;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }

@@ -25759,3 +25759,13 @@ section {
     transform: translateX(100%);
   }
 }
+
+.swiper-button-prev{
+  color: var(--base-color);
+}
+.swiper-button-next{
+  color: var(--base-color);
+}
+.swiper-pagination-bullet-active{
+  background: var(--base-color);
+}

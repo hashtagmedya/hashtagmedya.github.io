@@ -1,13 +1,13 @@
 /**
- * Swiper 11.1.1
+ * Swiper 9.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
- * Copyright 2014-2024 Vladimir Kharlampidi
+ * Copyright 2014-2023 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: April 9, 2024
+ * Released on: June 13, 2023
  */
 
 @font-face {
@@ -19,14 +19,8 @@
 :root {
   --swiper-theme-color: #007aff;
 }
-:host {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-}
-.swiper {
+.swiper,
+swiper-container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -53,7 +47,6 @@
   box-sizing: content-box;
 }
 .swiper-android .swiper-slide,
-.swiper-ios .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
 }
@@ -63,7 +56,8 @@
 .swiper-vertical {
   touch-action: pan-x;
 }
-.swiper-slide {
+.swiper-slide,
+swiper-slide {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
@@ -97,60 +91,13 @@
   perspective: 1200px;
 }
 .swiper-3d .swiper-cube-shadow,
-.swiper-3d .swiper-slide {
+.swiper-3d .swiper-slide,
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top {
   transform-style: preserve-3d;
-}
-.swiper-css-mode > .swiper-wrapper {
-  overflow: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
-  display: none;
-}
-.swiper-css-mode > .swiper-wrapper > .swiper-slide {
-  scroll-snap-align: start start;
-}
-.swiper-css-mode.swiper-horizontal > .swiper-wrapper {
-  scroll-snap-type: x mandatory;
-}
-.swiper-css-mode.swiper-vertical > .swiper-wrapper {
-  scroll-snap-type: y mandatory;
-}
-.swiper-css-mode.swiper-free-mode > .swiper-wrapper {
-  scroll-snap-type: none;
-}
-.swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {
-  scroll-snap-align: none;
-}
-.swiper-css-mode.swiper-centered > .swiper-wrapper::before {
-  content: "";
-  flex-shrink: 0;
-  order: 9999;
-}
-.swiper-css-mode.swiper-centered > .swiper-wrapper > .swiper-slide {
-  scroll-snap-align: center center;
-  scroll-snap-stop: always;
-}
-.swiper-css-mode.swiper-centered.swiper-horizontal
-  > .swiper-wrapper
-  > .swiper-slide:first-child {
-  margin-inline-start: var(--swiper-centered-offset-before);
-}
-.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper::before {
-  height: 100%;
-  min-height: 1px;
-  width: var(--swiper-centered-offset-after);
-}
-.swiper-css-mode.swiper-centered.swiper-vertical
-  > .swiper-wrapper
-  > .swiper-slide:first-child {
-  margin-block-start: var(--swiper-centered-offset-before);
-}
-.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper::before {
-  width: 100%;
-  min-width: 1px;
-  height: var(--swiper-centered-offset-after);
 }
 .swiper-3d .swiper-slide-shadow,
 .swiper-3d .swiper-slide-shadow-bottom,
@@ -196,6 +143,56 @@
     rgba(0, 0, 0, 0)
   );
 }
+.swiper-css-mode > .swiper-wrapper {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.swiper-css-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: start start;
+}
+.swiper-horizontal.swiper-css-mode > .swiper-wrapper {
+  scroll-snap-type: x mandatory;
+}
+.swiper-vertical.swiper-css-mode > .swiper-wrapper {
+  scroll-snap-type: y mandatory;
+}
+.swiper-css-mode.swiper-free-mode > .swiper-wrapper {
+  scroll-snap-type: none;
+}
+.swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: none;
+}
+.swiper-centered > .swiper-wrapper::before {
+  content: "";
+  flex-shrink: 0;
+  order: 9999;
+}
+.swiper-centered > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: center center;
+  scroll-snap-stop: always;
+}
+.swiper-centered.swiper-horizontal
+  > .swiper-wrapper
+  > .swiper-slide:first-child {
+  margin-inline-start: var(--swiper-centered-offset-before);
+}
+.swiper-centered.swiper-horizontal > .swiper-wrapper::before {
+  height: 100%;
+  min-height: 1px;
+  width: var(--swiper-centered-offset-after);
+}
+.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
+  margin-block-start: var(--swiper-centered-offset-before);
+}
+.swiper-centered.swiper-vertical > .swiper-wrapper::before {
+  width: 100%;
+  min-width: 1px;
+  height: var(--swiper-centered-offset-after);
+}
 .swiper-lazy-preloader {
   width: 42px;
   height: 42px;
@@ -212,7 +209,8 @@
   border-top-color: transparent;
 }
 .swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader,
-.swiper:not(.swiper-watch-progress) .swiper-lazy-preloader {
+.swiper:not(.swiper-watch-progress) .swiper-lazy-preloader,
+swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   animation: swiper-preloader-spin 1s infinite linear;
 }
 .swiper-lazy-preloader-white {
@@ -281,30 +279,6 @@
 .swiper-navigation-disabled .swiper-button-prev {
   display: none !important;
 }
-.swiper-button-next svg,
-.swiper-button-prev svg {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transform-origin: center;
-}
-.swiper-rtl .swiper-button-next svg,
-.swiper-rtl .swiper-button-prev svg {
-  transform: rotate(180deg);
-}
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-  left: var(--swiper-navigation-sides-offset, 10px);
-  right: auto;
-}
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 10px);
-  left: auto;
-}
-.swiper-button-lock {
-  display: none;
-}
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-family: swiper-icons;
@@ -313,6 +287,11 @@
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 10px);
+  right: auto;
 }
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
@@ -326,6 +305,9 @@
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   content: "next";
+}
+.swiper-button-lock {
+  display: none;
 }
 .swiper-pagination {
   position: absolute;
@@ -456,6 +438,9 @@ button.swiper-pagination-bullet {
 }
 .swiper-horizontal.swiper-rtl
   > .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet,
+:host(.swiper-horizontal.swiper-rtl)
+  .swiper-pagination-bullets-dynamic
   .swiper-pagination-bullet {
   transition: 0.2s transform, 0.2s right;
 }
@@ -508,7 +493,7 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
   border-radius: var(--swiper-scrollbar-border-radius, 10px);
   position: relative;
-  touch-action: none;
+  -ms-touch-action: none;
   background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, 0.1));
 }
 .swiper-scrollbar-disabled > .swiper-scrollbar,
@@ -569,7 +554,8 @@ button.swiper-pagination-bullet {
   cursor: move;
   touch-action: none;
 }
-.swiper .swiper-notification {
+.swiper .swiper-notification,
+swiper-container .swiper-notification {
   position: absolute;
   left: 0;
   top: 0;
@@ -598,9 +584,7 @@ button.swiper-pagination-bullet {
 .swiper-fade .swiper-slide .swiper-slide {
   pointer-events: none;
 }
-.swiper-fade .swiper-slide-active {
-  pointer-events: auto;
-}
+.swiper-fade .swiper-slide-active,
 .swiper-fade .swiper-slide-active .swiper-slide-active {
   pointer-events: auto;
 }
@@ -629,9 +613,18 @@ button.swiper-pagination-bullet {
 }
 .swiper-cube .swiper-slide-active,
 .swiper-cube .swiper-slide-next,
+.swiper-cube .swiper-slide-next + .swiper-slide,
 .swiper-cube .swiper-slide-prev {
   pointer-events: auto;
   visibility: visible;
+}
+.swiper-cube .swiper-slide-shadow-bottom,
+.swiper-cube .swiper-slide-shadow-left,
+.swiper-cube .swiper-slide-shadow-right,
+.swiper-cube .swiper-slide-shadow-top {
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .swiper-cube .swiper-cube-shadow {
   position: absolute;
@@ -652,18 +645,6 @@ button.swiper-pagination-bullet {
   right: 0;
   filter: blur(50px);
 }
-.swiper-cube .swiper-slide-next + .swiper-slide {
-  pointer-events: auto;
-  visibility: visible;
-}
-.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-bottom,
-.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-left,
-.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-right,
-.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-top {
-  z-index: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
 .swiper-flip {
   overflow: visible;
 }
@@ -680,10 +661,10 @@ button.swiper-pagination-bullet {
 .swiper-flip .swiper-slide-active .swiper-slide-active {
   pointer-events: auto;
 }
-.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-bottom,
-.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-left,
-.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-right,
-.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-top {
+.swiper-flip .swiper-slide-shadow-bottom,
+.swiper-flip .swiper-slide-shadow-left,
+.swiper-flip .swiper-slide-shadow-right,
+.swiper-flip .swiper-slide-shadow-top {
   z-index: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

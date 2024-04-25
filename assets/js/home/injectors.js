@@ -4,11 +4,11 @@
  * @returns
  */
 
-const injectEmployees = (employees) =>
+const injectEmployees = (employees) => {
   employees.map(({ name, field, image, links }, index) =>
     $("#team-section-list").append(`
-<div class="swiper-slide" data-hash=${index}>
-<div>
+    <div class="swiper-slide" data-hash=${index}>
+    <div class="wow fadeInUp" data-wow-duration="1200ms">
         <div class="bi-team-item-2 text-center">
             <div class="bi-team-img-shape position-relative">
                 <span class="team-shape shape_1 position-absolute"><img src="assets/img/icon/tm-shape3.png" alt=""></span>
@@ -50,18 +50,19 @@ const injectEmployees = (employees) =>
                 }
             </div>
         </div>
-    </div>
+      </div>
     </div>
     `)
   );
+};
 /**
  * @description Injects the slider into the home page
  */
 const injectSlider = () => {
   new Swiper(".team-section-swiper", {
-    autoplay: {
-      delay: 0,
-    },
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -73,13 +74,15 @@ const injectSlider = () => {
         slidesPerView: 3,
       },
     },
-    centeredSlides: true,
-    loop: true,
-    speed: 3000,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    resizeObserver: true,
-    preventInteractionOnTransition: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    initialSlide: 2,
   });
 };
 

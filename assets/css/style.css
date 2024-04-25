@@ -22042,7 +22042,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   color: #0e0e0e;
   font-size: 50px;
   font-weight: 700;
-  padding-bottom: 30px;
+  padding-bottom: 1.5rem;
 }
 
 .bi-service-details-text-area .bi-service-details-text p {
@@ -22051,7 +22051,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .bi-service-details-text-area .bi-service-details-text h4 {
   font-size: 1.4rem;
-  padding-bottom: 20px;
+  padding-bottom: 1.5rem;
 }
 
 .bi-service-details-text-area .bi-service-details-feature .service-star {
@@ -22077,19 +22077,19 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .bi-service-details-text-area .bi-sd-feature .bi-sd-icon-title .inner-icon i {
-  font-size: 42px;
+  font-size: 2.2rem;
   line-height: 0.75;
   color: var(--base-color);
 }
 
 .bi-service-details-text-area .bi-sd-feature .bi-sd-icon-title .inner-title h4 {
   color: #0e0e0e;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 .bi-service-details-text-area .bi-sd-feature .bi-sd-feature-text {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .bi-service-details-text-area .bi-faq-content-area {
@@ -22105,6 +22105,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .bi-sidebar-widget {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 

@@ -7,7 +7,7 @@ define( "RECIPIENT_EMAIL", "info@hashtagmedya.com" ); //write your mail here
 // Read the form values
 $success = false;
 $userName = isset( $_POST['name'] ) ? preg_replace( "/[^\s\S\.\-\_\@a-zA-Z0-9]/", "", $_POST['name'] ) : "";
-$senderEmail = isset( $_POST['Email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['Email'] ) : "";
+$senderEmail = isset( $_POST['eimal'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['eimal'] ) : "";
 $senderPhone = isset( $_POST['phone'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['phone'] ) : "";
 $userSubject = isset( $_POST['subject'] ) ? preg_replace( "/[^\s\S\.\-\_\@a-zA-Z0-9]/", "", $_POST['subject'] ) : "";
 $message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";

@@ -13,7 +13,9 @@ const injectEmployees = (employees) => {
             <div class="bi-team-img-shape position-relative">
                 <span class="team-shape shape_1 position-absolute"><img src="assets/img/icon/tm-shape3.png" alt=""></span>
                 <span class="team-shape shape_2 position-absolute"><img src="assets/img/icon/tm-shape6.png" alt=""></span>
-                <div class="bi-team-img">
+                <div class="bi-team-img" onclick="${
+                  links ? `window.open('${links.linkedin}', '_blank')` : ""
+                }"  style="cursor: pointer;">
                     <img src=${createURL(image.data.attributes.url)}></img>
                 </div>
             </div>

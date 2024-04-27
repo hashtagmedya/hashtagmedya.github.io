@@ -30,7 +30,7 @@ loadHeader();
         </div>
         <div class="job-apply">
           <a
-            href="kariyer.html?${title}"
+            href="kariyer.html?title=${title}"
             class="btn btn-primary"
             style="color: white"
             >Başvur</a
@@ -62,7 +62,7 @@ loadHeader();
         </div>
         <div class="job-apply">
           <a
-            href="kariyer.html?${title}"
+            href="kariyer.html?title=${title}"
             class="btn btn-primary"
             style="color: white"
             >Başvur</a

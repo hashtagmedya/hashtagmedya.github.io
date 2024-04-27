@@ -90,7 +90,12 @@
                     />
                   </div>
                   <div class="col-md-6">
-                    <input type="text" name="subject" placeholder="Konu" />
+                    <input
+                      type="text"
+                      name="subject"
+                      placeholder="Konu"
+                      value="Kariyer Başvurusu"
+                    />
                   </div>
                   <div class="col-md-6">
                     <input type="text" name="city" placeholder="Şehir" />
@@ -177,6 +182,15 @@
     <script src="assets/js/home/injectors.js"></script>
     <script src="assets/js/home/index.js"></script>
     <script src="assets/js/common/navbar.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const title = params.get("title");
+
+      console.log(title);
+      if (title) {
+        $('input[name="position"]').val(title);
+      }
+    </script>
     <script>
       document.Haptic.Basic.preloader();
     </script>

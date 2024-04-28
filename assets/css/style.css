@@ -21703,12 +21703,13 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   transition: all 500ms ease;
 }
 
-.hpt-footer-widget .menu-widget li a:hover {
-  color: #e02626;
-}
-
 .hpt-footer-widget .menu-widget li a:hover::before {
   width: 100%;
+}
+
+
+.hpt-footer-widget .menu-widget li a:hover {
+  color: #e02626;
 }
 
 .hpt-footer-social-content {
@@ -25827,22 +25828,33 @@ section {
 }
 
 .job-badge{
-  background-color: #e1ebfb;
-  color: #146dff;
+  background-color: #fffae5;
+  color: var(--base-color);
   padding: 0.1rem 0.2rem;
   border-radius: 4px;
   font-weight: 400;
   font-size: 0.8rem;
   line-height: 1.6rem;
 }
+
+.google-map{
+  width: 850px;
+  height: 635px;
+  margin-bottom: 3rem;
+}
 @media screen and (max-width: 1024px) {
   .jobs-container{
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 @media screen and (max-width: 768px) {
   .jobs-container{
     grid-template-columns: 1fr;
+  }
+  .google-map{
+    width: 100%;
+    height: 635px;
   }
 }

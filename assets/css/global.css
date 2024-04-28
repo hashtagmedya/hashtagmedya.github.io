@@ -1,9 +1,9 @@
 :root {
-    --heading: 'RecoletaAlt';
-    --heading-2: 'Unbounded';
-    --body-font: 'Inter';
-    --body-color: #555555 ;
-    --base-color: #ffcd1d;
-    --title-color: #0e0e0e;
-    --body-bg-color: #171926;
+  --heading: "RecoletaAlt";
+  --heading-2: "Unbounded";
+  --body-font: "Inter";
+  --body-color: #555555;
+  --base-color: #ffcd1d;
+  --title-color: #0e0e0e;
+  --body-bg-color: #171926;
 }

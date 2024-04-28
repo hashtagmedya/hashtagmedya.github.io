@@ -84,7 +84,7 @@ const injectSlider = () => {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    initialSlide: 2,
+    initialSlide: 1,
   });
 };
 

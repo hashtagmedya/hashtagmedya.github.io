@@ -50,27 +50,27 @@ loadHeader();
 
     const projectInfoHandlers = [
       {
-        title: "Client",
+        title: "Müşteri",
         info: projectInfo.client,
       },
       {
-        title: "Category",
+        title: "Kategori",
         info: projectInfo.project_category.data.attributes.text,
       },
       {
-        title: "Start date",
+        title: "Başlangıç Tarihi",
         info: projectInfo.startDate,
       },
       {
-        title: "End date",
+        title: "Bitiş Tarihi",
         info: projectInfo.endDate,
       },
       {
-        title: "Project link",
+        title: "Proje Linki",
         info: projectInfo.projectLink,
       },
       {
-        title: "Budget",
+        title: "Bütçe",
         info: projectInfo.budget,
       },
     ];

@@ -23271,6 +23271,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   z-index: 1;
   overflow: hidden;
   padding: 40px 50px;
+  height: 100%
 }
 
 .bi-contact-info-item .info-bg {

@@ -47,6 +47,7 @@ Last change:    00/00/00
       },
       BackgroundImage: function () {
         $("[data-background]").each(function () {
+          console.log("data-background", this);
           $(this).css(
             "background-image",
             "url(" + $(this).attr("data-background") + ")"

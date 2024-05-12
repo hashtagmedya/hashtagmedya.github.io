@@ -161,6 +161,17 @@ Last change:    00/00/00
         $(".open_mobile_menu").on("click", function () {
           $("body").toggleClass("mobile_menu_overlay_on");
         });
+        if ($(".mobile_menu li.dropdown ul").length) {
+          $(".mobile_menu li.dropdown").append(
+            '<div class="dropdown-btn"><span class="fas fa-caret-right"></span></div>'
+          );
+          $(".mobile_menu li.dropdown .dropdown-btn").on("click", function () {
+            $(this).prev("ul").slideToggle(500);
+          });
+        }
+        $(".dropdown-btn").on("click", function () {
+          $(this).toggleClass("toggle-open");
+        });
       },
       TwinMax: function () {
         var $circleCursor = $(".cursor");

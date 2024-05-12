@@ -1094,7 +1094,7 @@ select:visited {
   padding: 10px 30px !important;
   color: #fff !important;
   font-weight: 600 !important;
-  font-size: 15px !important;
+  font-size: 1rem !important;
 }
 
 .bi-header-section .dropdown-menu a:before {
@@ -1797,6 +1797,7 @@ select:visited {
   height: 100vh;
   z-index: 101;
   position: fixed;
+  overflow-y: scroll;
   width: 310px;
   background-color: #0f0d0d;
   padding: 20px 35px 35px 35px;
@@ -1837,8 +1838,7 @@ select:visited {
   color: #fff;
   display: block;
   font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 1rem;
   padding: 10px 30px 10px 0 !important;
 }
 

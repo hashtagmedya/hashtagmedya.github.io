@@ -1798,7 +1798,6 @@ select:visited {
   z-index: 101;
   position: fixed;
   width: 310px;
-  overflow-y: scroll;
   background-color: #0f0d0d;
   padding: 20px 35px 35px 35px;
   -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
@@ -1839,7 +1838,6 @@ select:visited {
   display: block;
   font-weight: 600;
   font-size: 14px;
-  font-family: var(--heading);
   text-transform: uppercase;
   padding: 10px 30px 10px 0 !important;
 }

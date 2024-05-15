@@ -125,6 +125,15 @@ Font load
   src: url("../fonts/RecoletaAlt-Black.ttf") format("truetype");
 }
 
+,
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../fonts/LufgaBold.ttf") format("truetype");
+}
+
 @font-face {
   font-family: "RecoletaAlt";
   font-style: normal;
@@ -22223,7 +22232,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   border-radius: 30px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  background-color: rgba(255, 56, 56, 0.105);
+  background-color: #ffcd1d;
 }
 
 .bi-sidebar-widget .service-widget li a:before {

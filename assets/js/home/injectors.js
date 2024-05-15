@@ -65,6 +65,11 @@ const injectSlider = () => {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    speed: 1000,
     breakpoints: {
       0: {
         slidesPerView: 1,

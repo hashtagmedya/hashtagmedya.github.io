@@ -830,7 +830,7 @@ select:visited {
 }
 
 .bi-btn-1 a {
-  color: #fff;
+  color: black;
   font-size: 1rem;
   font-weight: 700;
   overflow: hidden;
@@ -867,7 +867,7 @@ select:visited {
 }
 
 .bi-btn-2 a {
-  color: #fff;
+  color: black;
   font-size: 12px;
   overflow: hidden;
   font-weight: 700;
@@ -910,7 +910,7 @@ select:visited {
   height: 0px;
   left: 0;
   top: 0;
-  background-color: #000;
+  background-color: #ffffff;
   z-index: -1;
   border-radius: 100%;
   -webkit-transition: all 0.5s;
@@ -3221,7 +3221,7 @@ select:visited {
 /*Portfolio area*/
 /*----------------------------------------------------*/
 .bi-portfolio-section {
-  padding: 170px 0px 90px;
+  padding: 0px 0px 90px;
 }
 
 .bi-portfolio-tab-btn-text {
@@ -3682,7 +3682,6 @@ select:visited {
 
 .bi-sponsor-content {
   padding: 20px 0px 60px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 /*---------------------------------------------------- */
@@ -4576,7 +4575,7 @@ select:visited {
 
 .bi-consult-form-wrap .bi-consult-form-area button {
   width: 100%;
-  color: #fff;
+  color: black;
   height: 60px;
   border: none;
   font-size: 14px;
@@ -4587,7 +4586,7 @@ select:visited {
 }
 
 .bi-consult-form-wrap .bi-consult-form-area button:hover {
-  background-color: #010101;
+  background-color: white;
 }
 
 /*---------------------------------------------------- */
@@ -22563,7 +22562,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .bi-team-details-contact-form button {
-  color: #fff;
+  color: black;
   border: none;
   font-size: 15px;
   font-weight: 700;
@@ -22577,6 +22576,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .bi-team-details-contact-form button:hover {
+  color: var(--base-color);
   background-color: #000000;
 }
 
@@ -22646,7 +22646,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .bi-portfolio-feed-top-content .bi-portfolio-filter-btn>div>div {
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 
 .bi-portfolio-feed-section .bi-portfolio-feed-item-wrapper {
@@ -23921,7 +23921,8 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .bi-footer-cta-content-2 .bi-footer-newslatter-form button:hover {
-  background-color: #11111;
+  color: var(--base-color);
+  background-color: black;
 }
 
 .bi-footer-widget-content-2 {

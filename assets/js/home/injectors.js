@@ -13,9 +13,8 @@ const injectEmployees = (employees) => {
             <div class="bi-team-img-shape position-relative">
                 <span class="team-shape shape_1 position-absolute"><img src="assets/img/icon/tm-shape3.png" alt=""></span>
                 <span class="team-shape shape_2 position-absolute"><img src="assets/img/icon/tm-shape6.png" alt=""></span>
-                <div class="bi-team-img" onclick="${
-                  links ? `window.open('${links.linkedin}', '_blank')` : ""
-                }"  style="cursor: pointer;">
+                <div class="bi-team-img" onclick="${links ? `window.open('${links.linkedin}', '_blank')` : ""
+      }"  style="cursor: pointer;">
                     <img src=${createURL(image.data.attributes.url)}></img>
                 </div>
             </div>
@@ -24,32 +23,27 @@ const injectEmployees = (employees) => {
                 <span>${field}</span>
             </div>
             <div class="bi-team-social ul-li">
-                ${
-                  links
-                    ? `<ul>
-                    ${
-                      links.instagram
-                        ? `<li><a href="${links.instagram}" target="_blank"> <i class="fab fa-instagram"/></a></li>`
-                        : ""
-                    }
-                    ${
-                      links.linkedin
-                        ? `<li><a href="${links.linkedin}" target="_blank"> <i class="fab fa-linkedin-in"/></a></li>`
-                        : ""
-                    }
-                    ${
-                      links.Facebook
-                        ? `<li><a href="${links.Facebook}" target="_blank"> <i class="fab fa-facebook"/></a></li>`
-                        : ""
-                    }
-                    ${
-                      links.youtube
-                        ? `<li><a href="${links.youtube}" target="_blank"> <i class="fab fa-youtube"/></a></li>`
-                        : ""
-                    }
+                ${links
+        ? `<ul>
+                    ${links.instagram
+          ? `<li><a href="${links.instagram}" target="_blank"> <i class="fab fa-instagram"/></a></li>`
+          : ""
+        }
+                    ${links.linkedin
+          ? `<li><a href="${links.linkedin}" target="_blank"> <i class="fab fa-linkedin-in"/></a></li>`
+          : ""
+        }
+                    ${links.Facebook
+          ? `<li><a href="${links.Facebook}" target="_blank"> <i class="fab fa-facebook"/></a></li>`
+          : ""
+        }
+                    ${links.youtube
+          ? `<li><a href="${links.youtube}" target="_blank"> <i class="fab fa-youtube"/></a></li>`
+          : ""
+        }
                 </ul>`
-                    : ""
-                }
+        : ""
+      }
             </div>
         </div>
       </div>
@@ -129,7 +123,7 @@ const injectBlogs = (blogs) => {
             <a href=${createHref(id)}>${formatDate(createdAt)}</a>
           </div>
           <h3>
-            <a href="blog-single.html">${title}</a>
+            <a href=${createHref(id)}>${title}</a>
           </h3>
           <a class="read_more text-uppercase" href=${createHref(id)}>
             DEVAMINI OKU<i class="fas fa-plus-circle"></i>

@@ -125,9 +125,9 @@ Last change:    00/00/00
                 o(".info-group").addClass("isActive");
             }),
             0 < o(".close-side-widget").length &&
-              o(".close-side-widget").on("click", function (e) {
-                e.preventDefault(), o(".info-group").removeClass("isActive");
-              }),
+            o(".close-side-widget").on("click", function (e) {
+              e.preventDefault(), o(".info-group").removeClass("isActive");
+            }),
             o(".xs-sidebar-widget").on("click", function (e) {
               e.stopPropagation();
             });
@@ -617,9 +617,9 @@ Last change:    00/00/00
           loopAdditionalSlides: 30,
           autoplay: {
             enabled: true,
-            delay: 6000,
+            delay: 0,
           },
-          speed: 400,
+          speed: 2000,
           breakpoints: {
             1600: {
               slidesPerView: 5,
@@ -861,7 +861,7 @@ Last change:    00/00/00
           loopAdditionalSlides: 30,
           autoplay: {
             enabled: true,
-            delay: 6000,
+            delay: 500,
           },
           speed: 400,
           breakpoints: {
@@ -918,7 +918,7 @@ Last change:    00/00/00
         });
       },
       PortfolioFilterImage: function (defaultFilter = "all") {
-        $(".filtr-container").imagesLoaded(function () {});
+        $(".filtr-container").imagesLoaded(function () { });
         var filterizd = $(".filtr-container");
         console.log(filterizd, defaultFilter, "filterizd", filterizd.length);
         if (filterizd.length) {

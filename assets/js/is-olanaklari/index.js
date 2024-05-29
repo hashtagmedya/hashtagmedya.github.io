@@ -23,20 +23,20 @@ loadHeader();
           <div class="bi-pricing-title-2 headline pera-content">
             <span class="text-uppercase"> ${seniority} </span>
             <h3>${position}</h3>
-            <h4>${experienceOfYears} Yıl Deneyim</h4>
+            <h4>${experienceOfYears}</h4>
           </div>
           <div class="bi-price-list-area ul-li-block">
             <ul>
               ${requirements
-                .map(
-                  (requirement) => `
+            .map(
+              (requirement) => `
                 <li>
                   <i class="bi bi-check2"></i>
                   ${requirement.text}
                 </li>
               `
-                )
-                .join("")}
+            )
+            .join("")}
             </ul>
           </div>
           <div class="bi-btn-2 bi-btn-area text-uppercase">

@@ -74,66 +74,44 @@
         <div class="bi-team-details-contact-info headline pera-content">
           <div class="bi-team-details-cont act-title">
             <div class="bi-team-details-contact-form">
-              <form action="sendCV.php" method="post">
+              <form id="careerForm" action="https://nodemailler.vercel.app/kariyer" target="_blank" method="post" enctype="multipart/form-data">
                 <div class="row">
                   <div class="col-md-6">
-                    <input type="text" name="name" placeholder="Adınız" />
+                    <input type="text" name="ad" placeholder="Adınız" />
                   </div>
                   <div class="col-md-6">
-                    <input type="text" name="surname" placeholder="Soyadınız" />
+                    <input type="text" name="soyad" placeholder="Soyadınız" />
                   </div>
                   <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="email"
-                      placeholder="Mail Adresiniz"
-                    />
+                    <input type="text" name="email" placeholder="Mail Adresiniz" />
                   </div>
                   <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="subject"
-                      placeholder="Konu"
-                      value="Kariyer Başvurusu"
-                    />
+                    <input type="text" name="basvuruTipi" placeholder="Konu" value="Kariyer Başvurusu" />
                   </div>
                   <div class="col-md-6">
-                    <input type="text" name="city" placeholder="Şehir" />
+                    <input type="text" name="sehir" placeholder="Şehir" />
                   </div>
                   <div class="col-md-6">
                     <input type="text" name="position" placeholder="Pozisyon" />
                   </div>
                   <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="portfolio"
-                      placeholder="Portfolyo Linki"
-                    />
+                    <input type="text" name="portfolyo" placeholder="Portfolyo Linki" />
                   </div>
                   <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="salary"
-                      placeholder="Maaş Beklentiniz"
-                    />
+                    <input type="text" name="maasBeklentisi" placeholder="Maaş Beklentiniz" />
                   </div>
                   <div class="col-md-12">
                     <div class="upload-cv headline">
                       <h3>CV/Özgeçmiş</h3>
-                      <input
-                        type="file"
-                        id="file"
-                        name="file"
-                        accept=".txt, .pdf, .doc, .docx"
-                      />
+                      <input type="file" id="file" name="cv" accept=".txt, .pdf, .doc, .docx" />
                     </div>
                   </div>
                   <div class="col-md-12">
-                    <textarea name="message" placeholder="Mesajınız"></textarea>
+                    <textarea name="mesaj" placeholder="Mesajınız"></textarea>
                   </div>
                   <div class="col-md-12">
                     <div class="ai-submit-btn d-flex">
-                      <button>Gönder</button>
+                      <button type="submit">Gönder</button>
                     </div>
                   </div>
                 </div>

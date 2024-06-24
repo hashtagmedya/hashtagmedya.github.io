@@ -50,11 +50,11 @@
         <div class="bi-footer-newslatter-form d-flex justify-content-between align-items-center">
           <span>Bültenimize abone olun!</span>
           <div class="bi-footer-newslatter position-relative">
-            <form action="subscribe.php" method="post">
-              <input type="email" name="email" placeholder="Email adresiniz..." />
+            <form action="https://nodemailler.vercel.app/save-mail" method="get" target="_blank">
+              <input type="email" name="mail" placeholder="Email adresiniz..." required />
               <input type="hidden" name="subject" value="Abone ol" />
-              <button>Gönder</button>
-            </form>
+              <button type="submit">Gönder</button>
+          </form>
           </div>
         </div>
       </div>

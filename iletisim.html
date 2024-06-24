@@ -116,22 +116,22 @@
             </div>
             <p></p>
             <div class="bi-team-details-contact-form">
-              <form action="sendmail.php" method="post">
+              <form id="contactForm" action="https://nodemailler.vercel.app/contact" target="_blank" method="get">
                 <div class="row">
                   <div class="col-md-6">
-                    <input type="text" name="name" placeholder="Isim" />
+                    <input type="text" name="name" placeholder="İsim" />
                   </div>
                   <div class="col-md-6">
-                    <input type="text" name="Email" placeholder="Email" />
+                    <input type="text" name="mail" placeholder="Email" />
                   </div>
                   <div class="col-md-6">
                     <input type="text" name="phone" placeholder="Telefon numarası" />
                   </div>
                   <div class="col-md-6">
-                    <input type="text" name="subject" placeholder="Konu" />
+                    <input type="text" name="title" placeholder="Konu" />
                   </div>
                   <div class="col-md-12">
-                    <textarea name="message" placeholder="Bize iletmek istediğiniz mesaj..."></textarea>
+                    <textarea name="content" placeholder="Bize iletmek istediğiniz mesaj..."></textarea>
                   </div>
                   <div class="col-md-12">
                     <div class="bi-submit-btn">

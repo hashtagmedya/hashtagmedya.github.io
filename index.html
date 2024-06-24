@@ -405,23 +405,28 @@
                       Lütfen Bilgileri Eksiksiz Doldurun
                     </div>
                     <div class="bi-consult-form-area">
-                      <form action="#" method="get">
-                        <div class="bi-consult-form-input" data-background="assets/img/bg/cta-form-bg.jpg">
-                          <label><i class="fal fa-user"></i>İSMİNİZ*</label>
-                          <input type="text" name="name" placeholder="Ad Soyad" />
-                          <label><i class="fal fa-envelope"></i>MAİL
-                            ADRESİNİZ*</label>
-                          <input type="text" name="Email" placeholder="Mail Adresiniz" />
-                          <label><i class="fal fa-phone"></i>TELEFON
-                            NUMARASI*</label>
-                          <input type="text" name="name" placeholder="Telefon Numaranız" />
-                          <label><i class="fal fa-plug"></i>Mesajınız</label>
-                          <input name="message" placeholder="Mesajınız..." />
 
-                          <input type="hidden" name="subject" value="Öneri" />
-                        </div>
-                        <button>BİZE ULAŞIN</button>
-                      </form>
+                     <form action="https://nodemailler.vercel.app/contact" target="_blank" method="get">
+       <div class="bi-consult-form-input" data-background="assets/img/bg/cta-form-bg.jpg">
+         <label><i class="fal fa-user"></i>İSMİNİZ*</label>
+         <input type="text" name="name" placeholder="Ad Soyad" required />
+
+        <label><i class="fal fa-envelope"></i>MAİL ADRESİNİZ*</label>
+        <input type="email" name="mail" placeholder="Mail Adresiniz" required />
+
+       <label><i class="fal fa-phone"></i>TELEFON NUMARASI*</label>
+       <input type="tel" name="phone" placeholder="Telefon Numaranız" required />
+
+       <label><i class="fal fa-plug"></i>Mesajınız</label>
+       <textarea name="content" placeholder="Mesajınız..."></textarea>
+
+       <input type="hidden" name="title" value="Öneri" />
+      </div>
+      <button type="submit">BİZE ULAŞIN</button>
+    </form>
+
+
+
                     </div>
                   </div>
                 </div>

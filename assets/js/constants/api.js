@@ -1,5 +1,5 @@
 const localURL = "http://localhost:1337";
-const remoteURL = "https://hashtagstrapi-2f857d5493de.herokuapp.com";
+const remoteURL = "https://hashtag.luen.world";
 
 /**
  * @description Create URL for Image

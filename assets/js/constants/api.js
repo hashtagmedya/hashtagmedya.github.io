@@ -1,5 +1,5 @@
 const localURL = "http://localhost:1337";
-const remoteURL = "https://hashtag.luen.world";
+const remoteURL = "https://github.com/hashtagmedya/Backend.git";
 
 /**
  * @description Create URL for Image
